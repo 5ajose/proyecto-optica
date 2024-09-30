@@ -1,0 +1,263 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A4C3B2;
+    border-radius: 20px;
+    width: 1342px;
+    height: 66px;
+    margin-top: 5px;
+    margin-left: 7px;
+    position: fixed;
+    top:0;
+    z-index: 1;
+   
+}
+body{
+    background-color: #EAF4F4;
+}
+.logoPrincipal img{
+    padding-left: 10px;
+    width: 139px;
+    
+}
+
+.catalogo{
+    position: relative;
+    display: inline-block;
+    color: #1D3557;
+    font-weight: bold;
+   
+   
+}
+.opciones{
+    background-color:#EAF4F4 ; 
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 177px;
+    height: 166px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
+    border-radius: 4px;
+
+   
+}
+.catalogo:hover .opciones{
+    display:flex;
+    flex-direction: column;
+   
+}
+.opciones a:hover{
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #A4C3B2;
+    border-radius: 4px;
+
+
+}
+.ExamenVisual{
+    position: relative;
+    display: inline-block;
+    color: #1D3557;
+    font-weight: bold;
+    
+}
+.opcionesDos{
+    background-color:#EAF4F4 ; 
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 160px;
+    height: 101px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
+    border-radius: 4px;
+}
+.opcionesDos a:hover{
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #A4C3B2;
+    border-radius: 4px;
+}
+.ExamenVisual:hover .opcionesDos{
+    display:flex;
+    flex-direction: column;  
+}
+
+.promociones{
+    position: relative;
+    display: inline-block;
+    color: #1D3557;
+    font-weight: bold;
+}
+.opcionesTres{
+    background-color:#EAF4F4 ; 
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 150px;
+    height: 134px;  
+    box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
+    border-radius: 4px;
+}
+.opcionesTres a:hover{
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #A4C3B2;
+    border-radius: 4px;
+
+}
+.promociones:hover .opcionesTres{
+    display:flex;
+    flex-direction: column;  
+}
+
+.botonesNav{
+    display: flex;   
+}
+.botonesNav a {
+    padding-top: 9px;
+}
+
+
+.botonesNav button{   
+    padding-left: 90px;
+    border: none;
+    background-color: #A4C3B2;
+
+}
+button a{
+    text-decoration: none;
+    color: #1D3557;  
+}
+
+
+.carritoDeCompras{
+    margin-right: 30px;
+}
+.carritoDeCompras i{
+    font-size: 30px;
+    
+}
+.buscador{
+    display: flex;
+}
+#buscarProducto{
+    border: none;
+    width: 250px;
+    height: 39px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.lupa{
+    padding: 0;
+    border-start-end-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+}
+
+.lupa i{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color:#1D3557;
+    font-size: 35px;
+   
+}
+
+main{
+    background-color: #EAF4F4;
+    margin-top: 70px;
+}
+.carousel-track img {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 100px;
+    width: 1332px;
+    height: 426px;
+    flex-shrink: 0;
+    margin-bottom: 50px;
+}
+.carousel {
+    width: 100%; 
+    overflow: hidden; 
+    position: relative;  
+}
+.carousel-track {
+    display: flex; 
+    animation: slide 20s infinite;    
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Posición inicial (primera imagen) */
+    }
+    29.41% {
+        transform: translateX(0); /* Mantiene la imagen*/
+    }
+    33.33% {
+        transform: translateX(-1336px); /* pasa a la siguiente imagen */
+    }
+    62.74% {
+        transform: translateX(-1336px); /* mantiene la imagen */
+    }
+    66.66% {
+        transform: translateX(-2672px); /* pasa a la siguiente imagen */
+    }
+    96.08% {
+        transform: translateX(-2672px); /* mantiene la imagen */
+    }
+    100% {
+        transform: translateX(0); /* Regresar a la primera imagen */
+    }
+}
+
+.marcas{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.marcas img{
+    border-radius: 50%;
+    width: 150px;
+}
+.accesosDirectos img{
+    width: 278px;
+    height: 556px;
+    border-radius: 20px;
+}
+.accesosDirectos{
+    display: flex;
+    justify-content: space-around;
+
+}
+.terminosYcondiciones{
+    width: 331px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+
+}
+footer{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    display: flex;
+    background-color:#CCE3DE;
+}
+footer a{
+    text-decoration: none;
+    color:#1D3557;
+}
+.contactanos{
+    width: 331px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+}
+.linkInteres{
+    width: 331px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+}
