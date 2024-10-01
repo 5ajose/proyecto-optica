@@ -176,7 +176,7 @@ main{
     width: 1332px;
     height: 426px;
     flex-shrink: 0;
-    margin-bottom: 50px;
+    
 }
 .carousel {
     width: 100%; 
@@ -215,6 +215,7 @@ main{
     display: flex;
     justify-content: space-around;
     margin-bottom: 40px;
+    width: 1348px;
 }
 .marcas img{
     border-radius: 50%;
@@ -238,6 +239,8 @@ main{
 
 }
 footer{
+    width: 1348px;
+    margin-top: 10px;
     padding-top: 20px;
     padding-left: 30px;
     padding-bottom: 20px;
@@ -260,4 +263,103 @@ footer a{
     height: 180px;
     display: flex;
     flex-direction: column;
+}
+
+ .floating-bubble i{
+     font-size: 35px;
+     border-radius: 50%;
+     color: white;
+     justify-content: center;
+     padding-left: 10px; 
+ }
+
+ .floating-bubble{
+   
+    border: none;
+    padding: 0; 
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #6B9080;
+    box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    float: right;
+    margin-right: 25px;
+    
+ }
+
+  .contact {
+    display:none;
+    position: absolute;
+    left: 0;
+    padding: 2px;
+    border-radius: 5px;
+    z-index: 100;
+    border: none;
+    bottom: 100%;
+  }
+  
+  
+  .floating-bubble:hover .contact {
+    display: block;
+    border: none;
+
+  }
+  
+ 
+  .contact:hover{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+  }
+  .contact button{
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .whatsapp i{
+    border: none;
+    color:#6B9080 ;
+    padding-left: 2px;
+    
+  } 
+  .whatsapp i:hover{
+    color: white;
+   
+  }
+  .contact button:hover{
+    display: flex;
+    background-color:#6B9080 ;
+    
+}
+  .facebook i{
+    border: none;
+    color:#6B9080 ;
+    padding-left: 2px;
+    
+  } 
+  .facebook i:hover{
+    color: white;
+  }
+  .instagram i{
+    border: none;
+    color:#6B9080 ;
+    padding-left: 2px;
+    
+    
+  } 
+  .instagram i:hover{
+    color: white;
+  }
+.contenedorBubble{
+    position: fixed;
+    float: right;
+    
 }
