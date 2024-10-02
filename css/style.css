@@ -133,6 +133,7 @@ button a{
 
 .carritoDeCompras{
     margin-right: 30px;
+    cursor: pointer;
 }
 .carritoDeCompras i{
     font-size: 30px;
@@ -215,6 +216,7 @@ main{
     display: flex;
     justify-content: space-around;
     margin-bottom: 40px;
+    margin-top: 20px;
     width: 1348px;
 }
 .marcas img{
@@ -225,12 +227,51 @@ main{
     width: 278px;
     height: 556px;
     border-radius: 20px;
+    cursor: pointer;
+    
 }
-.accesosDirectos{
-    display: flex;
-    justify-content: space-around;
+.accesosDirectos img:hover{
+    box-shadow: 4px 10px 10px #6B9080;
 
 }
+
+.accesosDirectos{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    justify-content: center;
+    gap: 40px;
+    
+}
+.gafasDeSol a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color:#1D3557;
+    font-weight: bold;
+}
+.accesorios a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color:#1D3557;
+    font-weight: bold;
+}
+.oftalmologicas a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color:#1D3557;
+    font-weight: bold;
+}
+.lentesDeContacto a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color:#1D3557;
+    font-weight: bold;
+}
+
 .terminosYcondiciones{
     width: 331px;
     height: 180px;
@@ -360,6 +401,6 @@ footer a{
   }
 .contenedorBubble{
     position: fixed;
-    float: right;
-    
+    left: 1280px;
+    z-index: 1000;
 }
