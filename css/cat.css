@@ -1,0 +1,228 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A4C3B2;
+    border-radius: 20px;
+    width: 1342px;
+    height: 66px;
+    margin-top: 5px;
+    margin-left: 7px;
+    position: fixed;
+    top:0;
+    z-index: 1; 
+
+}
+
+    
+
+    
+body{
+    background-color: #EAF4F4;
+}
+.logoPrincipal img{
+    padding-left: 10px;
+    width: 139px;
+    
+}
+
+.catalogo{
+    position: relative;
+    display: inline-block;
+    color: #1D3557;
+    font-weight: bold;
+   
+   
+}
+.opciones{
+    background-color:#EAF4F4 ; 
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 177px;
+    height: 166px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
+    border-radius: 4px;
+
+   
+}
+.catalogo:hover .opciones{
+    display:flex;
+    flex-direction: column;
+   
+}
+.opciones a:hover{
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #A4C3B2;
+    border-radius: 4px;
+
+
+}
+.ExamenVisual{
+    position: relative;
+    display: inline-block;
+    color: #1D3557;
+    font-weight: bold;
+    
+}
+.opcionesDos{
+    background-color:#EAF4F4 ; 
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 160px;
+    height: 101px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
+    border-radius: 4px;
+}
+.opcionesDos a:hover{
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #A4C3B2;
+    border-radius: 4px;
+}
+.ExamenVisual:hover .opcionesDos{
+    display:flex;
+    flex-direction: column;  
+}
+
+.promociones{
+    position: relative;
+    display: inline-block;
+    color: #1D3557;
+    font-weight: bold;
+}
+.opcionesTres{
+    background-color:#EAF4F4 ; 
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 150px;
+    height: 134px;  
+    box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
+    border-radius: 4px;
+}
+.opcionesTres a:hover{
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #A4C3B2;
+    border-radius: 4px;
+
+}
+.promociones:hover .opcionesTres{
+    display:flex;
+    flex-direction: column;  
+}
+
+.botonesNav{
+    display: flex;   
+}
+.botonesNav a {
+    padding-top: 9px;
+}
+
+
+.botonesNav button{   
+    padding-left: 90px;
+    border: none;
+    background-color: #A4C3B2;
+
+}
+button a{
+    text-decoration: none;
+    color: #1D3557;  
+}
+
+
+.carritoDeCompras{
+    margin-right: 30px;
+}
+.carritoDeCompras i{
+    font-size: 30px;
+    
+}
+.buscador{
+    display: flex;
+}
+#buscarProducto{
+    border: none;
+    width: 250px;
+    height: 39px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.lupa{
+    padding: 0;
+    border-start-end-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+}
+
+.lupa i{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color:#1D3557;
+    font-size: 35px;
+   
+}
+
+
+ul li {
+    list-style: none;
+    font: bold;
+}
+
+.containers {
+    display: flex;
+    padding: 25px;
+}
+
+.container-filtro {
+    height: 520px;
+    width: 180px;
+    background-color: #cce3de;
+    margin: 100px 0px 50px;
+}
+
+
+.container-productos {
+    height: 530px;
+    width: 990px;
+    background-color: #CCE3DE;
+    margin: 100px 0px 50px 50px;
+}
+
+.terminosYcondiciones{
+    width: 331px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+
+}
+footer{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    display: flex;
+    background-color:#CCE3DE;
+}
+footer a{
+    text-decoration: none;
+    color:#1D3557;
+}
+.contactanos{
+    width: 331px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+}
+.linkInteres{
+    width: 331px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+}
