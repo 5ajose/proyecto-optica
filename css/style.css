@@ -349,6 +349,11 @@ footer a{
     border: none;
 
   }
+  .floating-bubble:hover{
+    box-shadow: 1px 1px 4px #1D3557;
+    
+  }
+  
   
  
   .contact:hover{
