@@ -1,9 +1,10 @@
 nav{
     display: flex;
+    flex: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: #A4C3B2;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 1342px;
     height: 66px;
     margin-top: 5px;
@@ -11,7 +12,6 @@ nav{
     position: fixed;
     top:0;
     z-index: 1;
-   
 }
 body{
     background-color: #EAF4F4;
@@ -19,6 +19,7 @@ body{
 .logoPrincipal img{
     padding-left: 10px;
     width: 139px;
+    padding-bottom: 10px;
     
 }
 
@@ -39,6 +40,7 @@ body{
     height: 166px;
     box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
     border-radius: 4px;
+    z-index: 1;
 
    
 }
@@ -55,7 +57,7 @@ body{
 
 
 }
-.ExamenVisual{
+.examenVisual{
     position: relative;
     display: inline-block;
     color: #1D3557;
@@ -71,6 +73,7 @@ body{
     height: 101px;
     box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
     border-radius: 4px;
+    z-index: 1000;
 }
 .opcionesDos a:hover{
     font-size: 17px;
@@ -78,7 +81,7 @@ body{
     background-color: #A4C3B2;
     border-radius: 4px;
 }
-.ExamenVisual:hover .opcionesDos{
+.examenVisual:hover .opcionesDos{
     display:flex;
     flex-direction: column;  
 }
@@ -141,13 +144,21 @@ button a{
 }
 .buscador{
     display: flex;
+    align-items: center;
 }
 #buscarProducto{
     border: none;
-    width: 250px;
-    height: 39px;
+    width: 200px;
+    height: 30px;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
+    
+}
+
+#buscarProducto::placeholder{
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
 }
 
 .lupa{
@@ -162,7 +173,7 @@ button a{
     justify-content: center;
     color: white;
     background-color:#1D3557;
-    font-size: 35px;
+    font-size: 27px;
    
 }
 
@@ -173,7 +184,7 @@ main{
 .carousel-track img {
     margin-top: 10px;
     margin-left: 10px;
-    border-radius: 100px;
+    border-radius: 50px;
     width: 1332px;
     height: 426px;
     flex-shrink: 0;
@@ -226,7 +237,7 @@ main{
 .accesosDirectos img{
     width: 278px;
     height: 556px;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
     
 }
@@ -281,6 +292,7 @@ main{
 }
 footer{
     width: 1348px;
+    
     margin-top: 10px;
     padding-top: 20px;
     padding-left: 30px;
@@ -353,10 +365,7 @@ footer a{
     box-shadow: 1px 1px 4px #1D3557;
     
   }
-  
-  
- 
-  .contact:hover{
+.contact:hover{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -406,6 +415,274 @@ footer a{
   }
 .contenedorBubble{
     position: fixed;
-    left: 1280px;
+    left: 1240px;
     z-index: 1000;
+    margin-bottom: 10px;
+   
 }
+
+.floating-bubble{
+    
+    position:fixed;
+    z-index: 1000;
+   
+}
+
+
+
+
+
+/* Estilos generales RESPONSIVE pc/tablet y*/
+
+  
+  
+  @media (min-width: 700px) and (max-width: 1200px) {
+   
+    .carousel{
+        width: 100%;
+        height: 100%;
+    }
+    .carousel-track{
+        width: 100%;
+        height: 100%;
+    }
+    .carousel-track img{
+        width: 100%;
+        height: 100%;
+    }
+    .marcas {
+        display: flex;
+      height: 100%;
+      width: 100%;
+    }
+    .marcas img{
+       width: 100px;
+    }
+      header nav {
+        flex-direction: row;
+        width: 100%;
+      }
+      .opciones{
+        top:50px;
+      }
+      .opcionesDos{
+        top:50px;
+        z-index: 1000;
+      }
+      .opcionesTres{
+        top:50px;
+      }
+  
+    .buscador {
+      width: 60%;
+      margin: 10px 0;
+    }
+    #buscarProducto{
+        width: 212px;
+        margin-left: 20px;
+    }
+    .botonesNav {
+    display: flex;
+    justify-content: row;
+    margin-top: 0;
+    width: 100%;
+     height:100%;
+    
+    }
+    .botonesNav button{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+         
+    }
+   
+    .catalogo{
+        display: flex;
+        align-items: center;
+    }
+    .examenVisual{
+        display: flex;
+        align-items: center;
+    }
+    .promociones{
+        display: flex;
+        align-items: center;
+    }
+    
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+      
+      
+    }
+    footer a{
+        width: 100%
+        
+    }
+    .accesosDirectos{
+        display: flex;
+        width: 100%;
+    }
+    .accesosDirectos img{
+        width: 100%;
+        height: 100%;
+    }
+    .opciones a{
+        font-size: 100%;
+    }
+
+
+    .contenedorBubble{
+        display: flex;
+        position:sticky;
+        width: 100%;
+        z-index: 1000;
+
+       
+        
+    }
+    @keyframes slide {
+        0% {
+            transform: translateX(0); /* Primera imagen */
+        }
+        20.41% {
+            transform: translateX(0); /* Mantiene la primera imagen */
+        }
+        33.33% {
+            transform: translateX(-105%); /* Pasa a la segunda imagen */
+        }
+        62.74% {
+            transform: translateX(-100%); /* Mantiene la segunda imagen */
+        }
+        66.66% {
+            transform: translateX(-205%); /* Pasa a la tercera imagen */
+        }
+        96.08% {
+            transform: translateX(-200%); /* Mantiene la tercera imagen */
+        }
+        100% {
+            transform: translateX(0); /* Vuelve a la primera imagen */
+        }
+    }
+    
+  }
+  @media (min-width: 330px) and (max-width: 700px){
+    
+    .marcas,
+    #buscarProducto,
+    .lupa, .lupa i
+    {
+        display: none;
+    }
+    .carousel-track img{
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+    }
+   
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0); /* Primera imagen */
+        }
+        20.41% {
+            transform: translateX(0); /* Mantiene la primera imagen */
+        }
+        33.33% {
+            transform: translateX(-110%); /* Pasa a la segunda imagen */
+        }
+        62.74% {
+            transform: translateX(-100%); /* Mantiene la segunda imagen */
+        }
+        66.66% {
+            transform: translateX(-205%); /* Pasa a la tercera imagen */
+        }
+        96.08% {
+            transform: translateX(-200%); /* Mantiene la tercera imagen */
+        }
+        100% {
+            transform: translateX(0); /* Vuelve a la primera imagen */
+        }
+    }
+
+    .logoPrincipal img{
+        width: 100px;
+        height: auto;
+        padding-left: 0;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: center;
+        width: 90%;   
+    }
+    .botonesNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+   
+    .botonesNav button{
+        padding-left: 1%;
+    }
+    .carritoDeCompras{
+        display: flex;
+        justify-content:center;
+        position:end;
+    }
+    .carritoDeCompras i{
+        font-size: 25px;
+        padding-left: 8px;
+        width: 10px;
+    }
+      nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;   
+}
+main {
+    display: flex;
+    flex-direction: column;
+   
+}
+.accesosDirectos{
+    display: flex;
+    flex-wrap: wrap;    
+}
+.accesosDirectos img{
+    width:150px;
+    height: 150px;
+    flex-wrap: wrap; 
+    
+}
+        
+
+
+footer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+footer a{
+    font-size: 15px;
+}
+
+.floating-bubble{
+    position:fixed;
+    z-index: 1000;   
+}
+.contenedorBubble{
+    position: sticky;
+   
+}
+
+
+  }
+  
