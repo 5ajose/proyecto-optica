@@ -427,16 +427,21 @@ footer a{
     z-index: 1000;
    
 }
+.marcasDos{
+    display: none;
+}
 
 
-
+.subtitulo{
+    display: none;
+}
 
 
 /* Estilos generales RESPONSIVE pc/tablet y*/
 
   
   
-  @media (min-width: 700px) and (max-width: 1200px) {
+  @media (min-width: 600px) and (max-width: 1200px) {
    
     .carousel{
         width: 100%;
@@ -535,16 +540,18 @@ footer a{
     .opciones a{
         font-size: 100%;
     }
-
-
+    .marcasDos {
+        display: none;
+    }
+    
     .contenedorBubble{
         display: flex;
         position:sticky;
         width: 100%;
         z-index: 1000;
-
-       
-        
+    }
+    .subtitulo{
+        display: none;
     }
     @keyframes slide {
         0% {
@@ -569,19 +576,22 @@ footer a{
             transform: translateX(0); /* Vuelve a la primera imagen */
         }
     }
+    .subtitulo{
+        display: none;
+    }
     
   }
-  @media (min-width: 330px) and (max-width: 700px){
-    
-    .marcas,
-    #buscarProducto,
+  @media (min-width: 330px) and (max-width: 600px){
+
+    .marcas
+    ,#buscarProducto,
     .lupa, .lupa i
     {
         display: none;
     }
     .carousel-track img{
-        width: 100%;
-        height: 100%;
+        width: 470px;
+        height: 300px;
         border-radius: 30px;
     }
    
@@ -660,11 +670,28 @@ main {
     width:150px;
     height: 150px;
     flex-wrap: wrap; 
+
     
 }
-        
-
-
+.marcasDos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 30px;
+}
+.marcasDos img{
+  width: 365px;
+  height: 168px;  
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.subtitulo{
+    text-align: center;
+    padding-top: 20px;
+}
+    
 footer{
     display: flex;
     width: 100%;
@@ -683,6 +710,29 @@ footer a{
    
 }
 
+footer a{
+    display: none;
+    flex-wrap: wrap;
+    
+}
+footer h4{
+    font-size: large;
+    
+}
 
-  }
+.terminosYcondiciones{
+    height: 30px;
+}
+.contactanos{
+    height: 30px;
+}
+.linkInteres{
+    height: 30px;
+}
+
+
+
+
+
+}
   
