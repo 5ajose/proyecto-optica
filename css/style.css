@@ -165,7 +165,6 @@ button a{
     padding: 0;
     border-start-end-radius: 6px;
     border-bottom-right-radius: 6px;
-
 }
 
 .lupa i{
@@ -173,8 +172,7 @@ button a{
     justify-content: center;
     color: white;
     background-color:#1D3557;
-    font-size: 27px;
-   
+    font-size: 27px; 
 }
 
 main{
@@ -187,8 +185,7 @@ main{
     border-radius: 50px;
     width: 1332px;
     height: 426px;
-    flex-shrink: 0;
-    
+    flex-shrink: 0;   
 }
 .carousel {
     width: 100%; 
@@ -222,7 +219,6 @@ main{
         transform: translateX(0); /* Regresar a la primera imagen */
     }
 }
-
 .marcas{
     display: flex;
     justify-content: space-around;
@@ -230,9 +226,14 @@ main{
     margin-top: 20px;
     width: 1348px;
 }
+
 .marcas img{
     border-radius: 50%;
     width: 150px;
+}
+.marcas img:hover{
+    cursor: pointer;
+    box-shadow: 4px 10px 10px #6B9080;
 }
 .accesosDirectos img{
     width: 278px;
@@ -318,15 +319,15 @@ footer a{
     flex-direction: column;
 }
 
- .floating-bubble i{
+.floating-bubble i{
      font-size: 35px;
      border-radius: 50%;
      color: white;
      justify-content: center;
      padding-left: 10px; 
- }
+}
 
- .floating-bubble{
+.floating-bubble{
    
     border: none;
     padding: 0; 
@@ -340,11 +341,10 @@ footer a{
     cursor: pointer;
     position: relative;
     float: right;
-    margin-right: 25px;
-    
- }
+    margin-right: 25px;  
+}
 
-  .contact {
+.contact {
     display:none;
     position: absolute;
     left: 0;
@@ -353,42 +353,42 @@ footer a{
     z-index: 100;
     border: none;
     bottom: 100%;
-  }
+}
+
   
-  
-  .floating-bubble:hover .contact {
+.floating-bubble:hover .contact {
     display: block;
     border: none;
 
   }
-  .floating-bubble:hover{
+.floating-bubble:hover{
     box-shadow: 1px 1px 4px #1D3557;
     
-  }
+}
 .contact:hover{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     
-  }
-  .contact button{
+}
+.contact button{
     border: none;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-  }
-  .whatsapp i{
+}
+.whatsapp i{
     border: none;
     color:#6B9080 ;
     padding-left: 2px;
     
-  } 
-  .whatsapp i:hover{
+} 
+.whatsapp i:hover{
     color: white;
-   
-  }
+ 
+}
   .contact button:hover{
     display: flex;
     background-color:#6B9080 ;
@@ -399,33 +399,30 @@ footer a{
     color:#6B9080 ;
     padding-left: 2px;
     
-  } 
-  .facebook i:hover{
-    color: white;
-  }
-  .instagram i{
-    border: none;
-    color:#6B9080 ;
-    padding-left: 2px;
-    
-    
-  } 
-  .instagram i:hover{
-    color: white;
-  }
+} 
+.facebook i:hover{
+  color: white;
+}
+.instagram i{
+  border: none;
+  color:#6B9080 ;
+  padding-left: 2px;
+  
+  
+} 
+.instagram i:hover{
+  color: white;
+}
 .contenedorBubble{
     position: fixed;
     left: 1240px;
     z-index: 1000;
-    margin-bottom: 10px;
-   
+    margin-bottom: 10px;  
 }
 
 .floating-bubble{
-    
     position:fixed;
     z-index: 1000;
-   
 }
 .marcasDos{
     display: none;
@@ -437,11 +434,11 @@ footer a{
 }
 
 
-/* Estilos generales RESPONSIVE pc/tablet y*/
+/* Estilos generales RESPONSIVE pc/tablet y movil*/
 
   
   
-  @media (min-width: 600px) and (max-width: 1200px) {
+@media (min-width: 600px) and (max-width: 1200px) {
    
     .carousel{
         width: 100%;
@@ -463,20 +460,20 @@ footer a{
     .marcas img{
        width: 100px;
     }
-      header nav {
-        flex-direction: row;
-        width: 100%;
-      }
-      .opciones{
-        top:50px;
-      }
-      .opcionesDos{
-        top:50px;
-        z-index: 1000;
-      }
-      .opcionesTres{
-        top:50px;
-      }
+    header nav {
+      flex-direction: row;
+      width: 100%;
+    }
+    .opciones{
+      top:50px;
+    }
+    .opcionesDos{
+      top:50px;
+      z-index: 1000;
+    }
+    .opcionesTres{
+      top:50px;
+    }
   
     .buscador {
       width: 60%;
@@ -500,8 +497,7 @@ footer a{
         padding: 0;
         width: 100%;
         height: 100%;
-        margin-top: 0;
-         
+        margin-top: 0;    
     }
    
     .catalogo{
@@ -522,12 +518,10 @@ footer a{
       flex-wrap: wrap;
       width: 100%;
       height: 100%;
-      
-      
     }
+
     footer a{
-        width: 100%
-        
+        width: 100%    
     }
     .accesosDirectos{
         display: flex;
@@ -580,9 +574,10 @@ footer a{
         display: none;
     }
     
-  }
-  @media (min-width: 330px) and (max-width: 600px){
+}
 
+
+@media (min-width: 330px) and (max-width: 600px){
     .marcas
     ,#buscarProducto,
     .lupa, .lupa i
@@ -594,8 +589,7 @@ footer a{
         height: 300px;
         border-radius: 30px;
     }
-   
-
+    
     @keyframes slide {
         0% {
             transform: translateX(0); /* Primera imagen */
@@ -635,8 +629,7 @@ footer a{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 100%;
-        
+        width: 100%;   
     }
    
     .botonesNav button{
@@ -656,83 +649,79 @@ footer a{
     display: flex;
     justify-content: center;
     width: 100%;   
-}
-main {
-    display: flex;
-    flex-direction: column;
-   
-}
-.accesosDirectos{
-    display: flex;
-    flex-wrap: wrap;    
-}
-.accesosDirectos img{
-    width:150px;
-    height: 150px;
-    flex-wrap: wrap; 
-
+    }
+    main {
+        display: flex;
+        flex-direction: column;
     
-}
-.marcasDos{
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    justify-content: center;
-    margin-top: 30px;
-}
-.marcasDos img{
-  width: 365px;
-  height: 168px;  
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-.subtitulo{
-    text-align: center;
-    padding-top: 20px;
-}
+    }
+    .accesosDirectos{
+        display: flex;
+        flex-wrap: wrap;    
+    }
+    .accesosDirectos img{
+        width:150px;
+        height: 150px;
+        flex-wrap: wrap; 
+
+
+    }
+    .marcasDos{
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .marcasDos img{
+      width: 365px;
+      height: 168px;  
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .subtitulo{
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    footer{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    footer a{
+        font-size: 15px;
+    }
+
+    .floating-bubble{
+        position:fixed;
+        z-index: 1000;   
+    }
+    .contenedorBubble{
+        position: sticky;
     
-footer{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-}
-footer a{
-    font-size: 15px;
-}
+    }
 
-.floating-bubble{
-    position:fixed;
-    z-index: 1000;   
-}
-.contenedorBubble{
-    position: sticky;
-   
-}
+    footer a{
+        display: none;
+        flex-wrap: wrap;
 
-footer a{
-    display: none;
-    flex-wrap: wrap;
-    
-}
-footer h4{
-    font-size: large;
-    
-}
+    }
+    footer h4{
+        font-size: large;
 
-.terminosYcondiciones{
-    height: 30px;
-}
-.contactanos{
-    height: 30px;
-}
-.linkInteres{
-    height: 30px;
-}
+    }
 
-
-
-
+    .terminosYcondiciones{
+        height: 30px;
+    }
+    .contactanos{
+        height: 30px;
+    }
+    .linkInteres{
+        height: 30px;
+    }
 
 }
   
