@@ -185,6 +185,9 @@ ul li {
     margin: 100px 0px 50px;
 }
 
+.container-filtro{
+    width: 15%;
+}
 
 .container-productos {
     height: 530px;
@@ -197,17 +200,21 @@ ul li {
     border-radius: 8px;
 }
 
+.gafas{
+flex-wrap: wrap;
+}
+
 .rayban{
-    height: 160px;
-    width: 160px;
+    height: 140px;
+    width: 180px;
     margin: 20px 0px 5px 30px;
     cursor: pointer;
 
 }
 
 .hutdesol{
-    height: 160px;
-    width: 160px;
+    height: 140px;
+    width: 180px;
     margin: 20px 0px 5px 30px;
     cursor: pointer;
 }
@@ -217,8 +224,8 @@ ul li {
 }
 
 .Oakleysol{
-    height: 160px;
-    width: 160px;
+    height: 140px;
+    width: 180px;
     margin: 20px 0px 5px 30px;
     cursor: pointer;
 }
@@ -228,8 +235,22 @@ ul li {
 }
 
 .Oakleysport{
-    height: 160px;
-    width: 160px;
+    height: 140px;
+    width: 180px;
+    margin: 20px 0px 5px 30px;
+    cursor: pointer;
+}
+
+.vogue1{
+    height: 140px;
+    width: 180px;
+    margin: 20px 0px 5px 30px;
+    cursor: pointer;
+}
+
+.vogue2{
+    height: 140px;
+    width: 180px;
     margin: 20px 0px 5px 30px;
     cursor: pointer;
 }
@@ -238,17 +259,9 @@ ul li {
     box-shadow: 4px 10px 10px #A4C3B2;
 }
 
-.container-productos{
-    flex-wrap: wrap;
-}
-
-.rayban:hover{
-    box-shadow: 4px 10px 10px #A4C3B2;
-}
-
 .raybansol{
-    height: 160px;
-    width: 160px;
+    height: 140px;
+    width: 180px;
     margin: 20px 0px 5px 30px;
     cursor: pointer;
 }
@@ -258,8 +271,8 @@ ul li {
 }
 
 .raybansolf{
-    height: 160px;
-    width: 160px;
+    height: 140px;
+    width: 180px;
     margin: 20px 0px 5px 30px;
     cursor: pointer;
 }
@@ -269,19 +282,44 @@ ul li {
 }
 
 .gafas1 {
-    height: 17opx;
-    width: 190px;
+    height: 140px;
+    width: 180px;
 }
 
 .gafas2 {
-    height: 17opx;
-    width: 190px;
+    height: 140px;
+    width: 180px;
 }
 
 .gafas3 {
-    height: 17opx;
-    width: 190px;
+    height: 140px;
+    width: 180px;
 }
+.gafas4 {
+    height: 140px;
+    width: 180px;
+}
+
+.gafas5 {
+    height: 140px;
+    width: 180px;
+}
+
+.gafas6 {
+    height: 140px;
+    width: 180px;
+}
+
+.gafas7 {
+    height: 140px;
+    width: 180px;
+}
+
+.gafas8 {
+    height: 140px;
+    width: 180px;
+}
+
 .container-productos{
     display: flex;
     justify-content: space-evenly;
