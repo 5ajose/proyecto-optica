@@ -219,8 +219,7 @@ button a{
     gap: 20px;
 }
 .pasosAgendamento{
-    width: 1200px;
-    height: 120px;
+    
     flex-wrap: wrap;
 }
 .reprogramarCita{
@@ -260,21 +259,38 @@ h2{
         max-width: 700px;
         margin: 0px;}
 
-    .pasosAgendamento{
-        flex-wrap: wrap;
-    }
+   
     h2{
     
         font-size: 20px;
         
     }
+    
     .contenido{
-        max-width: 700px;
+        max-width: 900px;
+        height: 200px;
         margin: 0px;
         flex-wrap:wrap-reverse ;
     }
     .pasosAgendamento{
         flex-wrap: wrap;
+    }
+
+}
+@media (max-width:750px) {
+    .pasosAgendamento{
+       
+        flex-direction: column;
+    }
+    .botonesDcT{
+        flex-direction: column;
+    }
+
+}
+@media (max-width:400px) {
+  
+    .botonesDcT{
+        flex-direction: column;
     }
 
 }
