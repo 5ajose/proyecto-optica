@@ -1,0 +1,807 @@
+*{font-family: "Fredoka", sans-serif;
+    font-size: 16px;}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A4C3B2;
+    border-radius: 20px;
+    width: 1342px;
+    height: 66px;
+    margin-top: 5px;
+    margin-left: 7px;
+    position: fixed;
+    top:0;
+    z-index: 1;
+   
+}
+body{
+    background-color: #EAF4F4;
+}
+.logoPrincipal img{
+    padding-left: 10px;
+    width: 139px;
+    
+}
+
+.catalogo{
+    position: relative;
+    display: inline-block;
+    color: #1D3557;
+    font-weight: bold;
+   
+   
+}
+.opciones{
+    background-color:#EAF4F4 ; 
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 177px;
+    height: 166px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
+    border-radius: 4px;
+
+   
+}
+.catalogo:hover .opciones{
+    display:flex;
+    flex-direction: column;
+   
+}
+.opciones a:hover{
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #A4C3B2;
+    border-radius: 4px;
+
+
+}
+.ExamenVisual{
+    position: relative;
+    display: inline-block;
+    color: #1D3557;
+    font-weight: bold;
+    
+}
+.opcionesDos{
+    background-color:#EAF4F4 ; 
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 160px;
+    height: 101px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
+    border-radius: 4px;
+}
+.opcionesDos a:hover{
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #A4C3B2;
+    border-radius: 4px;
+}
+.ExamenVisual:hover .opcionesDos{
+    display:flex;
+    flex-direction: column;  
+}
+
+.promociones{
+    position: relative;
+    display: inline-block;
+    color: #1D3557;
+    font-weight: bold;
+}
+.opcionesTres{
+    background-color:#EAF4F4 ; 
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 150px;
+    height: 134px;  
+    box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
+    border-radius: 4px;
+}
+.opcionesTres a:hover{
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #A4C3B2;
+    border-radius: 4px;
+
+}
+.promociones:hover .opcionesTres{
+    display:flex;
+    flex-direction: column;  
+}
+
+.botonesNav{
+    display: flex;   
+}
+.botonesNav a {
+    padding-top: 9px;
+}
+
+
+.botonesNav button{   
+    padding-left: 90px;
+    border: none;
+    background-color: #A4C3B2;
+
+}
+button a{
+    text-decoration: none;
+    color: #1D3557;  
+}
+
+
+.carritoDeCompras{
+    margin-right: 30px;
+}
+.carritoDeCompras i{
+    font-size: 30px;
+    
+}
+.buscador{
+    display: flex;
+}
+#buscarProducto{
+    border: none;
+    width: 250px;
+    height: 39px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+#buscarProducto{
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    
+}
+
+#buscarProducto::placeholder{
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+}
+.carritoDeCompras{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.carritoDeCompras i{
+    font-size: 30px;
+    
+}
+
+.lupa{
+    padding: 0;
+    border-start-end-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+}
+
+.lupa i{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color:#1D3557;
+    font-size: 27px;
+   
+}
+.main{
+    margin-top: 7rem;
+    display: flex;
+    background-color: #EAF4F4;
+    flex-wrap: wrap;
+    
+}
+.main{
+    margin-left: 30px;
+}
+
+.imgojos{
+    width: 1200px;
+    height: 139px;
+}
+.pasosAgendamento{
+    margin-top: 20px;
+    display: flex;
+    
+}
+.tiendaRelogAgenda{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    width: 400px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.pasosAgendamento{
+    width: 1200px;
+    height: 120px;
+    flex-wrap: wrap;
+}
+.reprogramarCita{
+    margin-top: 20px;
+    margin-left: 18px;
+    background-color: rgb(221, 69, 69);
+    border: none ;
+    color: white;
+}
+.contenido{
+    width: 1195px;
+    height: 106px;
+    margin-left: 20px;
+    margin-top: 4px;
+    border: 1px solid black;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.botonesDcT{
+    margin-top: 31px ;
+    margin-bottom: 5px;
+    margin-left: 14px;
+    gap: 45px;
+    display: flex;
+    
+    
+}
+h2{
+    margin-top: 40px;
+    margin-left: 14px;
+}
+
+
+@media (max-width:1215px) {
+    .imgojos{
+        max-width: 700px;
+        margin: 0px;}
+
+    .pasosAgendamento{
+        flex-wrap: wrap;
+    }
+    h2{
+    
+        font-size: 20px;
+        
+    }
+    .contenido{
+        max-width: 700px;
+        margin: 0px;
+        flex-wrap:wrap-reverse ;
+    }
+    .pasosAgendamento{
+        flex-wrap: wrap;
+    }
+
+}
+
+.cantidad{
+    width: 95px;
+    height: 27px;
+}
+.añadirAlCarro{
+    background-color: rgb(221, 69, 69);
+    border: none ;
+}
+.descripcion{
+    margin-top: 50px;
+    width: 950px;
+    height: 149px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+   border: 1px solid black;
+   align-items: center;
+   border-radius: 10px;
+   margin-left: 157px;
+   padding: 10px;
+}
+p{
+    font-size: 16px;    
+}
+
+
+.imgEscudoLogo{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgEscudoLogo img{
+    width: 40px;
+}
+.botones{
+    margin-left: 31px;
+
+}
+.cantidad{
+    letter-spacing: 8px;
+    color: black;
+}
+.añadirAlCarro{
+    color: white;
+}
+
+footer{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    display: flex;
+    background-color:#CCE3DE;
+}
+
+
+
+footer a{
+    text-decoration: none;
+    color:#1D3557;
+}
+.contactanos{
+    width: 331px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+}
+.linkInteres{
+    width: 331px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+}   
+.terminosYcondiciones{
+    width: 331px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Posición inicial (primera imagen) */
+    }
+    29.41% {
+        transform: translateX(0); /* Mantiene la imagen*/
+    }
+    33.33% {
+        transform: translateX(-1336px); /* pasa a la siguiente imagen */
+    }
+    62.74% {
+        transform: translateX(-1336px); /* mantiene la imagen */
+    }
+    66.66% {
+        transform: translateX(-2672px); /* pasa a la siguiente imagen */
+    }
+    96.08% {
+        transform: translateX(-2672px); /* mantiene la imagen */
+    }
+    100% {
+        transform: translateX(0); /* Regresar a la primera imagen */
+    }
+}
+.floating-bubble i{
+    font-size: 35px;
+    border-radius: 50%;
+    color: white;
+    justify-content: center;
+    padding-left: 10px; 
+}
+
+.floating-bubble{
+  
+   border: none;
+   padding: 0; 
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   background-color: #6B9080;
+   box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.1);
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   position: relative;
+   float: right;
+   margin-right: 25px;
+   
+}
+
+.contact {
+    display:none;
+    position: absolute;
+    left: 0;
+    padding: 2px;
+    border-radius: 5px;
+    z-index: 100;
+    border: none;
+    bottom: 100%;
+  }
+  
+  
+  .floating-bubble:hover .contact {
+    display: block;
+    border: none;
+
+  }
+  .floating-bubble:hover{
+    box-shadow: 1px 1px 4px #1D3557;
+    
+  }
+.contact:hover{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+  }
+  .contact button{
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .whatsapp i{
+    border: none;
+    color:#6B9080 ;
+    padding-left: 2px;
+    
+  } 
+  .whatsapp i:hover{
+    color: white;
+   
+  }
+  .contact button:hover{
+    display: flex;
+    background-color:#6B9080 ;
+    
+}
+  .facebook i{
+    border: none;
+    color:#6B9080 ;
+    padding-left: 2px;
+    
+  } 
+  .facebook i:hover{
+    color: white;
+  }
+  .instagram i{
+    border: none;
+    color:#6B9080 ;
+    padding-left: 2px;
+    
+    
+  } 
+  .instagram i:hover{
+    color: white;
+  }
+.contenedorBubble{
+    position: fixed;
+    top: 500px;
+    left: 1240px;
+    z-index: 1000;
+    margin-bottom: 10px;
+   
+}
+
+.floating-bubble{
+    
+    position:fixed;
+    z-index: 1000;
+   
+}
+.marcasDos{
+    display: none;
+}
+
+
+.subtitulo{
+    display: none;
+}
+
+
+/* Estilos generales RESPONSIVE pc/tablet y*/
+
+  
+  
+  @media (min-width: 600px) and (max-width: 1200px) {
+   
+    .carousel{
+        width: 100%;
+        height: 100%;
+    }
+    .carousel-track{
+        width: 100%;
+        height: 100%;
+    }
+    .carousel-track img{
+        width: 100%;
+        height: 100%;
+    }
+    .marcas {
+        display: flex;
+      height: 100%;
+      width: 100%;
+    }
+    .marcas img{
+       width: 100px;
+    }
+      header nav {
+        flex-direction: row;
+        width: 100%;
+      }
+      .opciones{
+        top:50px;
+      }
+      .opcionesDos{
+        top:50px;
+        z-index: 1000;
+      }
+      .opcionesTres{
+        top:50px;
+      }
+  
+    .buscador {
+      width: 60%;
+      margin: 10px 0;
+    }
+    #buscarProducto{
+        width: 212px;
+        margin-left: 20px;
+    }
+    .botonesNav {
+    display: flex;
+    justify-content: row;
+    margin-top: 0;
+    width: 100%;
+     height:100%;
+    
+    }
+    .botonesNav button{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+         
+    }
+   
+    .catalogo{
+        display: flex;
+        align-items: center;
+    }
+    .examenVisual{
+        display: flex;
+        align-items: center;
+    }
+    .promociones{
+        display: flex;
+        align-items: center;
+    }
+    
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+      
+      
+    }
+    footer a{
+        width: 100%
+        
+    }
+    .accesosDirectos{
+        display: flex;
+        width: 100%;
+    }
+    .accesosDirectos img{
+        width: 100%;
+        height: 100%;
+    }
+    .opciones a{
+        font-size: 100%;
+    }
+    .marcasDos {
+        display: none;
+    }
+    
+    .contenedorBubble{
+        display: flex;
+        position:sticky;
+        width: 100%;
+        z-index: 1000;
+    }
+    .subtitulo{
+        display: none;
+    }
+    @keyframes slide {
+        0% {
+            transform: translateX(0); /* Primera imagen */
+        }
+        20.41% {
+            transform: translateX(0); /* Mantiene la primera imagen */
+        }
+        33.33% {
+            transform: translateX(-105%); /* Pasa a la segunda imagen */
+        }
+        62.74% {
+            transform: translateX(-100%); /* Mantiene la segunda imagen */
+        }
+        66.66% {
+            transform: translateX(-205%); /* Pasa a la tercera imagen */
+        }
+        96.08% {
+            transform: translateX(-200%); /* Mantiene la tercera imagen */
+        }
+        100% {
+            transform: translateX(0); /* Vuelve a la primera imagen */
+        }
+    }
+    .subtitulo{
+        display: none;
+    }
+    
+  }
+  @media (min-width: 330px) and (max-width: 600px){
+
+    .marcas
+    ,#buscarProducto,
+    .lupa, .lupa i
+    {
+        display: none;
+    }
+    .carousel-track img{
+        width: 470px;
+        height: 300px;
+        border-radius: 30px;
+    }
+   
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0); /* Primera imagen */
+        }
+        20.41% {
+            transform: translateX(0); /* Mantiene la primera imagen */
+        }
+        33.33% {
+            transform: translateX(-110%); /* Pasa a la segunda imagen */
+        }
+        62.74% {
+            transform: translateX(-100%); /* Mantiene la segunda imagen */
+        }
+        66.66% {
+            transform: translateX(-205%); /* Pasa a la tercera imagen */
+        }
+        96.08% {
+            transform: translateX(-200%); /* Mantiene la tercera imagen */
+        }
+        100% {
+            transform: translateX(0); /* Vuelve a la primera imagen */
+        }
+    }
+
+    .logoPrincipal img{
+        width: 100px;
+        height: auto;
+        padding-left: 0;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: center;
+        width: 90%;   
+    }
+    .botonesNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+   
+    .botonesNav button{
+        padding-left: 1%;
+    }
+    .carritoDeCompras{
+        display: flex;
+        justify-content:center;
+        position:end;
+    }
+    .carritoDeCompras i{
+        font-size: 25px;
+        padding-left: 8px;
+        width: 10px;
+    }
+      nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;   
+}
+main {
+    display: flex;
+    flex-direction: column;
+   
+}
+.accesosDirectos{
+    display: flex;
+    flex-wrap: wrap;    
+}
+.accesosDirectos img{
+    width:150px;
+    height: 150px;
+    flex-wrap: wrap; 
+
+    
+}
+.marcasDos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 30px;
+}
+.marcasDos img{
+  width: 365px;
+  height: 168px;  
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.subtitulo{
+    text-align: center;
+    padding-top: 20px;
+}
+    
+footer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+footer a{
+    font-size: 15px;
+}
+
+.floating-bubble{
+    position:fixed;
+    z-index: 1000;   
+}
+.contenedorBubble{
+    position: sticky;
+   
+}
+
+footer a{
+    display: none;
+    flex-wrap: wrap;
+    
+}
+footer h4{
+    font-size: large;
+    
+}
+
+.terminosYcondiciones{
+    height: 30px;
+}
+.contactanos{
+    height: 30px;
+}
+.linkInteres{
+    height: 30px;
+}
+
+
+
+
+
+}
