@@ -1,0 +1,528 @@
+nav{
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A4C3B2;
+    border-radius: 5px;
+    width: 1342px;
+    height: 66px;
+    margin-top: 5px;
+    margin-left: 7px;
+    position: fixed;
+    top:0;
+    z-index: 1;
+}
+
+.logoPrincipal img{
+    padding-left: 10px;
+    width: 139px;
+    padding-bottom: 10px;
+    
+}
+
+.catalogo{
+    position: relative;
+    display: inline-block;
+    color: #1D3557;
+    font-weight: bold;
+   
+   
+}
+.opciones{
+    background-color:#EAF4F4 ; 
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 177px;
+    height: 166px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
+    border-radius: 4px;
+    z-index: 1;
+
+   
+}
+.catalogo:hover .opciones{
+    display:flex;
+    flex-direction: column;
+   
+}
+.opciones a:hover{
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #A4C3B2;
+    border-radius: 4px;
+
+
+}
+.examenVisual{
+    position: relative;
+    display: inline-block;
+    color: #1D3557;
+    font-weight: bold;
+    
+}
+.opcionesDos{
+    background-color:#EAF4F4 ; 
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 160px;
+    height: 101px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
+    border-radius: 4px;
+    z-index: 1000;
+}
+.opcionesDos a:hover{
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #A4C3B2;
+    border-radius: 4px;
+}
+.examenVisual:hover .opcionesDos{
+    display:flex;
+    flex-direction: column;  
+}
+
+.promociones{
+    position: relative;
+    display: inline-block;
+    color: #1D3557;
+    font-weight: bold;
+}
+.opcionesTres{
+    background-color:#EAF4F4 ; 
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 150px;
+    height: 134px;  
+    box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
+    border-radius: 4px;
+}
+.opcionesTres a:hover{
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #A4C3B2;
+    border-radius: 4px;
+
+}
+.promociones:hover .opcionesTres{
+    display:flex;
+    flex-direction: column;  
+}
+
+.botonesNav{
+    display: flex;   
+}
+.botonesNav a {
+    padding-top: 9px;
+}
+
+
+.botonesNav button{   
+    padding-left: 90px;
+    border: none;
+    background-color: #A4C3B2;
+
+}
+button a{
+    text-decoration: none;
+    color: #1D3557;  
+}
+
+
+.carritoDeCompras{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.carritoDeCompras i{
+    font-size: 30px;
+    
+}
+.buscador{
+    display: flex;
+    align-items: center;
+}
+#buscarProducto{
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    
+}
+
+#buscarProducto::placeholder{
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.lupa{
+    padding: 0;
+    border-start-end-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.lupa i{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color:#1D3557;
+    font-size: 27px; 
+}
+body{
+    background-color: #EAF4F4;
+}
+
+.floating-bubble i{
+    font-size: 35px;
+    border-radius: 50%;
+    color: white;
+    justify-content: center;
+    padding-left: 10px; 
+}
+
+.floating-bubble{
+  
+   border: none;
+   padding: 0; 
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   background-color: #6B9080;
+   box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.1);
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   position: relative;
+   float: right;
+   margin-right: 25px;  
+}
+
+.contact {
+   display:none;
+   position: absolute;
+   left: 0;
+   padding: 2px;
+   border-radius: 5px;
+   z-index: 100;
+   border: none;
+   bottom: 100%;
+}
+
+ 
+.floating-bubble:hover .contact {
+   display: block;
+   border: none;
+
+ }
+.floating-bubble:hover{
+   box-shadow: 1px 1px 4px #1D3557;
+   
+}
+.contact:hover{
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+   
+}
+.contact button{
+   border: none;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+}
+.whatsapp i{
+   border: none;
+   color:#6B9080 ;
+   padding-left: 2px;
+   
+} 
+.whatsapp i:hover{
+   color: white;
+
+}
+ .contact button:hover{
+   display: flex;
+   background-color:#6B9080 ;
+   
+}
+ .facebook i{
+   border: none;
+   color:#6B9080 ;
+   padding-left: 2px;
+   
+} 
+.facebook i:hover{
+ color: white;
+}
+.instagram i{
+ border: none;
+ color:#6B9080 ;
+ padding-left: 2px;
+ 
+ 
+} 
+.instagram i:hover{
+ color: white;
+}
+.contenedorBubble{
+   position: fixed;
+   left: 1240px;
+   top: 500px;
+   z-index: 1000;
+   margin-bottom: 40px;  
+}
+
+.floating-bubble{
+   position:fixed;
+   z-index: 1000;
+}
+
+.pagoConfirmado{
+    
+    margin-top: 40px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pagoConfirmado i{
+    font-size: 200px;
+    color: #6B9080;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminosYcondiciones{
+   width: 331px;
+   height: 180px;
+   display: flex;
+   flex-direction: column;
+
+}
+footer{
+   width: 1348px;
+   
+   margin-top: 10px;
+   padding-top: 20px;
+   padding-left: 30px;
+   padding-bottom: 20px;
+   margin-top: 50px;
+   display: flex;
+   background-color:#CCE3DE;
+}
+footer a{
+   text-decoration: none;
+   color:#1D3557;
+}
+.contactanos{
+   width: 331px;
+   height: 180px;
+   display: flex;
+   flex-direction: column;
+}
+.linkInteres{
+   width: 331px;
+   height: 180px;
+   display: flex;
+   flex-direction: column;
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+
+    header nav {
+      flex-direction: row;
+      width: 100%;
+    }
+    .opciones{
+      top:50px;
+    }
+    .opcionesDos{
+      top:50px;
+      z-index: 1000;
+    }
+    .opcionesTres{
+      top:50px;
+    }
+    .buscador {
+      width: 60%;
+      margin: 10px 0;
+    }
+    #buscarProducto{
+        width: 212px;
+        margin-left: 20px;
+    }
+    .botonesNav {
+    display: flex;
+    justify-content: row;
+    margin-top: 0;
+    width: 100%;
+     height:100%;
+
+    }
+    .botonesNav button{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;    
+    }
+
+    .catalogo{
+        display: flex;
+        align-items: center;
+    }
+    .examenVisual{
+        display: flex;
+        align-items: center;
+    }
+    .promociones{
+        display: flex;
+        align-items: center;
+    }
+    .pagoConfirmado{
+        display: flex;
+        justify-content: center;  
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        flex-direction: column;
+    }
+  
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+    }
+    footer a{
+        width: 100%    
+    }
+    .accesosDirectos{
+        display: flex;
+        width: 100%;
+    }
+    .accesosDirectos img{
+        width: 100%;
+        height: 100%;
+    }
+    .opciones a{
+        font-size: 100%;
+    }
+    .marcasDos {
+        display: none;
+    }
+
+    .contenedorBubble{
+        display: flex;
+        position:sticky;
+        width: 100%;
+        z-index: 1000;
+        right: 100px;
+
+    }
+
+
+}
+
+
+@media (min-width: 310px) and (max-width: 700px){
+
+    
+    #buscarProducto,
+    .lupa, .lupa i
+    {
+        display: none;
+    }
+
+.logoPrincipal img{
+        width: 100px;
+        height: auto;
+        padding-left: 0;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: center;
+        width: 90%;   
+    }
+    .botonesNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;   
+    }
+   
+    .botonesNav button{
+        padding-left: 1%;
+    }
+    .carritoDeCompras{
+        display: flex;
+        justify-content:center;
+        position:end;
+    }
+    .carritoDeCompras i{
+        font-size: 25px;
+        padding-left: 8px;
+        width: 10px;
+    }
+      nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;   
+    }
+    footer{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    footer a{
+        font-size: 15px;
+    }
+
+    .floating-bubble{
+        position:fixed;
+        z-index: 1000;   
+    }
+    .contenedorBubble{
+        position: sticky;
+        right: 100px;
+    
+    }
+
+    footer a{
+        display: none;
+        flex-wrap: wrap;
+
+    }
+    footer h4{
+        font-size: large;
+
+    }
+
+    .terminosYcondiciones{
+        height: 30px;
+    }
+    .contactanos{
+        height: 30px;
+    }
+    .linkInteres{
+        height: 30px;
+    }
+
+}    
+
+
