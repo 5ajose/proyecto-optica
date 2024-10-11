@@ -113,6 +113,7 @@ body{
     flex-direction: column;  
 }
 
+
 .botonesNav{
     display: flex;   
 }
@@ -222,6 +223,10 @@ button a{
     
     flex-wrap: wrap;
 }
+.agendamientoo{
+    display: flex;
+    flex-direction: column;
+}
 .reprogramarCita{
     margin-top: 20px;
     margin-left: 18px;
@@ -236,7 +241,7 @@ button a{
     margin-top: 4px;
     border: 1px solid black;
     padding: 10px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .botonesDcT{
@@ -253,6 +258,27 @@ h2{
     margin-left: 14px;
 }
 
+.boton{
+    display: block;
+}
+.calendario{
+    flex-direction: column;
+    
+}
+input{
+    padding: 10px;
+    font-size: 16px;
+    border: 0px solid color(#6B9080); /* Borde del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #6B9080; /* Fondo */
+    color: #EAF4F4; /* Color del texto */
+    width: 150px;
+    height: 36px;
+}
+.btn-group button{
+    border: #6B9080;
+    background-color: #6B9080;
+}
 
 @media (max-width:1215px) {
     .imgojos{
@@ -270,7 +296,7 @@ h2{
         max-width: 900px;
         height: 200px;
         margin: 0px;
-        flex-wrap:wrap-reverse ;
+        /* flex-wrap:wrap-reverse ; */
     }
     .pasosAgendamento{
         flex-wrap: wrap;
@@ -284,16 +310,23 @@ h2{
     }
     .botonesDcT{
         flex-direction: column;
+
+    }
+    .contenido{
+        max-width: 400px;
+        height: 230px;
+        min-width: 400px;
+        margin: 0px;
+        /* flex-wrap:wrap-reverse ; */
     }
 
 }
 @media (max-width:400px) {
-  
-    .botonesDcT{
-        flex-direction: column;
+    .contenido{
+        max-width: 380px;
     }
-
 }
+
 
 .cantidad{
     width: 95px;
