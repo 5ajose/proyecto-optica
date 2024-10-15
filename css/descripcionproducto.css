@@ -291,7 +291,7 @@ button a{
 .descripcion{
     margin-top: 50px;
     width: 950px;
-    height: 149px;
+    height: 249px;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -672,8 +672,32 @@ footer a{
     .descripcion{
 
         width: 100%;
-        padding-right: 50px;
+        height: 100%;
         
+        
+    }
+    .imgRay{
+        width: 100%;
+        height: 100%;
+    }
+    .descrip{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .satisfacionGarantiaEnvio{
+        width: 100%;
+        height: 100%;
+        
+
+    }
+    
+    @media (min-width: 330px) and (max-width: 5999px){
+        .descripcion{
+
+            width: 100%;
+            height: 100%;
+
     }
    
 
