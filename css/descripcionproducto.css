@@ -1,5 +1,5 @@
 *{font-family: "Fredoka", sans-serif;
-    font-size: 18px;}
+    font-size: 16px;}
 nav{
     display: flex;
     justify-content: space-between;
@@ -684,12 +684,19 @@ footer a{
         width: 100%;
         height: 100%;
     }
-    
-    .satisfacionGarantiaEnvio{
+  
+    .imglente{
+        width: 100%;
+        height: 100%;
+    }
+    .imgEscudoLogo{
         width: 100%;
         height: 100%;
         
-
+    }
+    .titulosLogo{
+        width: 100%;
+        height: 100%;
     }
     
     @media (min-width: 330px) and (max-width: 5999px){

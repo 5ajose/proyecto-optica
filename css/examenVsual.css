@@ -250,9 +250,21 @@ button a{
     margin-left: 14px;
     gap: 45px;
     display: flex;
+    width: 1545px;
+    height: 120px;
     
     
 }
+.botoo{
+    
+    height: 24px;
+ 
+   
+ }
+.todo{
+    display: flex;
+}
+
 h2{
     margin-top: 40px;
     margin-left: 14px;
@@ -263,8 +275,22 @@ h2{
 }
 .calendario{
     flex-direction: column;
+
     
 }
+.button{
+
+    padding: 10px;
+    font-size: 16px;
+    border: 0px solid color(#6B9080); /* Borde del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #6B9080; /* Fondo */
+    color: #EAF4F4; /* Color del texto */
+    width: 150px;
+    height: 36px;
+    
+}
+
 input{
     padding: 10px;
     font-size: 16px;
