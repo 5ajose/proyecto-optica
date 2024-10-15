@@ -1,5 +1,9 @@
 *{font-family: "Fredoka", sans-serif;
+<<<<<<< HEAD
     font-size: 16px;}
+=======
+font-size: 16px;}
+>>>>>>> 6de7bbdad27e8684e257003c8f4929a8fed0185a
 nav{
     display: flex;
     justify-content: space-between;
@@ -113,6 +117,7 @@ body{
     flex-direction: column;  
 }
 
+
 .botonesNav{
     display: flex;   
 }
@@ -138,6 +143,7 @@ button a{
 }
 .carritoDeCompras i{
     font-size: 30px;
+    color: #1D3557;
     
 }
 .buscador{
@@ -219,9 +225,12 @@ button a{
     gap: 20px;
 }
 .pasosAgendamento{
-    width: 1200px;
-    height: 120px;
+    
     flex-wrap: wrap;
+}
+.agendamientoo{
+    display: flex;
+    flex-direction: column;
 }
 .reprogramarCita{
     margin-top: 20px;
@@ -237,7 +246,7 @@ button a{
     margin-top: 4px;
     border: 1px solid black;
     padding: 10px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .botonesDcT{
@@ -254,30 +263,75 @@ h2{
     margin-left: 14px;
 }
 
+.boton{
+    display: block;
+}
+.calendario{
+    flex-direction: column;
+    
+}
+input{
+    padding: 10px;
+    font-size: 16px;
+    border: 0px solid color(#6B9080); /* Borde del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #6B9080; /* Fondo */
+    color: #EAF4F4; /* Color del texto */
+    width: 150px;
+    height: 36px;
+}
+.btn-group button{
+    border: #6B9080;
+    background-color: #6B9080;
+}
 
 @media (max-width:1215px) {
     .imgojos{
         max-width: 700px;
         margin: 0px;}
 
-    .pasosAgendamento{
-        flex-wrap: wrap;
-    }
+   
     h2{
     
         font-size: 20px;
         
     }
+    
     .contenido{
-        max-width: 700px;
+        max-width: 900px;
+        height: 200px;
         margin: 0px;
-        flex-wrap:wrap-reverse ;
+        /* flex-wrap:wrap-reverse ; */
     }
     .pasosAgendamento{
         flex-wrap: wrap;
     }
 
 }
+@media (max-width:750px) {
+    .pasosAgendamento{
+       
+        flex-direction: column;
+    }
+    .botonesDcT{
+        flex-direction: column;
+
+    }
+    .contenido{
+        max-width: 400px;
+        height: 230px;
+        min-width: 400px;
+        margin: 0px;
+        /* flex-wrap:wrap-reverse ; */
+    }
+
+}
+@media (max-width:400px) {
+    .contenido{
+        max-width: 380px;
+    }
+}
+
 
 .cantidad{
     width: 95px;

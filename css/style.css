@@ -529,8 +529,8 @@ footer a{
         width: 100%;
     }
     .accesosDirectos img{
-        width: 100%;
-        height: 100%;
+        width: 150px;
+        height: 200px;
     }
     .opciones a{
         font-size: 100%;
@@ -586,9 +586,9 @@ footer a{
         display: none;
     }
     .carousel-track img{
-        width: 470px;
-        height: 300px;
-        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
     }
     
     @keyframes slide {
@@ -599,16 +599,16 @@ footer a{
             transform: translateX(0); /* Mantiene la primera imagen */
         }
         33.33% {
-            transform: translateX(-110%); /* Pasa a la segunda imagen */
+            transform: translateX(-109%); /* Pasa a la segunda imagen */
         }
         62.74% {
-            transform: translateX(-100%); /* Mantiene la segunda imagen */
+            transform: translateX(-107%); /* Mantiene la segunda imagen */
         }
         66.66% {
-            transform: translateX(-205%); /* Pasa a la tercera imagen */
+            transform: translateX(-200%); /* Pasa a la tercera imagen */
         }
         96.08% {
-            transform: translateX(-200%); /* Mantiene la tercera imagen */
+            transform: translateX(-210%); /* Mantiene la tercera imagen */
         }
         100% {
             transform: translateX(0); /* Vuelve a la primera imagen */
