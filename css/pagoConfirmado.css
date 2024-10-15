@@ -302,6 +302,10 @@ body{
     font-size: 200px;
     color: #6B9080;
 }
+.pagoConfirmado p{
+    text-align: center;
+}
+
 main{
     display: flex;
     justify-content: center;

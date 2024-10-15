@@ -599,16 +599,16 @@ footer a{
             transform: translateX(0); /* Mantiene la primera imagen */
         }
         33.33% {
-            transform: translateX(-135%); /* Pasa a la segunda imagen */
+            transform: translateX(-109%); /* Pasa a la segunda imagen */
         }
         62.74% {
-            transform: translateX(-120%); /* Mantiene la segunda imagen */
+            transform: translateX(-107%); /* Mantiene la segunda imagen */
         }
         66.66% {
-            transform: translateX(-250%); /* Pasa a la tercera imagen */
+            transform: translateX(-200%); /* Pasa a la tercera imagen */
         }
         96.08% {
-            transform: translateX(-245%); /* Mantiene la tercera imagen */
+            transform: translateX(-210%); /* Mantiene la tercera imagen */
         }
         100% {
             transform: translateX(0); /* Vuelve a la primera imagen */

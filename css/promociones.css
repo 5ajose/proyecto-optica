@@ -621,7 +621,7 @@ header nav {
     }  
     
     .logoPrincipal img{
-        width: 100px;
+        width: 100%;
         height: auto;
         padding-left: 0;
     }
