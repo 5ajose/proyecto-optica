@@ -1,3 +1,7 @@
+*{font-family: "Fredoka", sans-serif;
+    font-size: 16px;
+}
+
 nav{
     display: flex;
     flex: wrap;
@@ -13,9 +17,7 @@ nav{
     top:0;
     z-index: 1;
 }
-body{
-    background-color: #EAF4F4;
-}
+
 .logoPrincipal img{
     padding-left: 10px;
     width: 139px;
@@ -119,6 +121,7 @@ body{
 }
 .botonesNav a {
     padding-top: 9px;
+    font-weight:600;
 }
 
 
@@ -175,7 +178,9 @@ button a{
     background-color:#1D3557;
     font-size: 27px; 
 }
-
+body{
+    background-color: #EAF4F4;
+}
 main{
     background-color: #EAF4F4;
     margin-top: 70px;
@@ -467,6 +472,7 @@ footer a{
     }
     .opciones{
       top:50px;
+      
     }
     .opcionesDos{
       top:50px;

@@ -1,3 +1,7 @@
+*{font-family: "Fredoka", sans-serif;
+    font-size: 16px;
+}
+
 nav{
     display: flex;
     flex: wrap;
@@ -117,6 +121,7 @@ nav{
 }
 .botonesNav a {
     padding-top: 9px;
+    font-weight:600;
 }
 
 
@@ -621,7 +626,7 @@ header nav {
     }  
     
     .logoPrincipal img{
-        width: 100%;
+        width: 100px;
         height: auto;
         padding-left: 0;
     }
