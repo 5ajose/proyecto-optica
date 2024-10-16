@@ -1,11 +1,14 @@
 *{font-family: "Fredoka", sans-serif;
-    font-size: 18px;}
+    font-size: 16px;
+}
+
 nav{
     display: flex;
+    flex: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: #A4C3B2;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 1342px;
     height: 66px;
     margin-top: 5px;
@@ -13,14 +16,12 @@ nav{
     position: fixed;
     top:0;
     z-index: 1;
-   
 }
-body{
-    background-color: #EAF4F4;
-}
+
 .logoPrincipal img{
     padding-left: 10px;
     width: 139px;
+    padding-bottom: 10px;
     
 }
 
@@ -41,6 +42,7 @@ body{
     height: 166px;
     box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
     border-radius: 4px;
+    z-index: 1;
 
    
 }
@@ -57,7 +59,7 @@ body{
 
 
 }
-.ExamenVisual{
+.examenVisual{
     position: relative;
     display: inline-block;
     color: #1D3557;
@@ -73,6 +75,7 @@ body{
     height: 101px;
     box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
     border-radius: 4px;
+    z-index: 1000;
 }
 .opcionesDos a:hover{
     font-size: 17px;
@@ -80,7 +83,7 @@ body{
     background-color: #A4C3B2;
     border-radius: 4px;
 }
-.ExamenVisual:hover .opcionesDos{
+.examenVisual:hover .opcionesDos{
     display:flex;
     flex-direction: column;  
 }
@@ -118,6 +121,7 @@ body{
 }
 .botonesNav a {
     padding-top: 9px;
+    font-weight:600;
 }
 
 
@@ -135,6 +139,7 @@ button a{
 
 .carritoDeCompras{
     margin-right: 30px;
+    cursor: pointer;
 }
 .carritoDeCompras i{
     font-size: 30px;
@@ -142,13 +147,7 @@ button a{
 }
 .buscador{
     display: flex;
-}
-#buscarProducto{
-    border: none;
-    width: 250px;
-    height: 39px;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
+    align-items: center;
 }
 #buscarProducto{
     border: none;
@@ -164,20 +163,11 @@ button a{
     justify-content: center;
     padding-left: 10px;
 }
-.carritoDeCompras{
-    margin-right: 30px;
-    cursor: pointer;
-}
-.carritoDeCompras i{
-    font-size: 30px;
-    
-}
 
 .lupa{
     padding: 0;
     border-start-end-radius: 6px;
     border-bottom-right-radius: 6px;
-
 }
 
 .lupa i{
@@ -185,8 +175,7 @@ button a{
     justify-content: center;
     color: white;
     background-color:#1D3557;
-    font-size: 27px;
-   
+    font-size: 27px; 
 }
 .main{
     margin-top: 7rem;
@@ -205,7 +194,7 @@ button a{
     margin-left: 10px;
     width: 700px;
     height: 400px;
-    object-fit: cover;
+  
 }
 .satisfacionGarantiaEnvio{
     
@@ -511,6 +500,10 @@ footer a{
   
   
   @media (min-width: 600px) and (max-width: 1200px) {
+
+    .satisfacionGarantiaEnvio{
+        width: 100%;
+    }
    
     .carousel{
         width: 100%;
@@ -664,6 +657,13 @@ footer a{
         border-radius: 30px;
     }
    
+    .descripcion{
+
+        width: 100%;
+        padding-right: 50px;
+        
+    }
+   
 
     @keyframes slide {
         0% {
@@ -731,6 +731,35 @@ main {
     flex-direction: column;
    
 }
+.satisfacionGarantiaEnvio{
+    width: 500px;
+
+}
+.satisfacionGarantiaEnvio p{
+font-size:14px;
+}
+.seccionUno{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imglente{
+    width: 98%;
+}
+.descripcion{
+    display: flex;
+    margin: 0;
+    margin-top:20px ;
+}
+.descripcion p{
+    font-size: 12px;
+}
+
+.imgEscudoLogo{
+    width: 87%;
+}
+
 .accesosDirectos{
     display: flex;
     flex-wrap: wrap;    
