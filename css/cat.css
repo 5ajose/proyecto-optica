@@ -86,6 +86,7 @@ body{
     flex-direction: column;  
 }
 
+
 .promociones{
     position: relative;
     display: inline-block;
@@ -201,7 +202,7 @@ ul li {
 }
 
 .container-productos {
-    height: 1230px;
+    height: 1630px;
     width: 990px;
     background-color: #EAF4F4;
     margin: 100px 0px 50px 50px;
@@ -211,97 +212,16 @@ ul li {
     border-radius: 8px;
 }
 
-.gafas{
-flex-wrap: wrap;
-}
-
-.rayban{
-    height: 200px;
-    width: 240px;
+.fotos{
+    height: 250px;
+    width: 350px;
     margin: 20px 0px 5px 30px;
     cursor: pointer;
+    justify-content: space-evenly;
 
 }
 
-.rayban:hover{
-    box-shadow: 4px 10px 10px #A4C3B2;
-}
-
-.hutdesol{
-    height: 200px;
-    width: 240px;
-    margin: 20px 0px 5px 30px;
-    cursor: pointer;
-}
-
-.hutdesol:hover{
-    box-shadow: 4px 10px 10px #A4C3B2;
-}
-
-.Oakleysol{
-    height: 200px;
-    width: 240px;
-    margin: 20px 0px 5px 30px;
-    cursor: pointer;
-}
-
-.Oakleysol:hover{
-    box-shadow: 4px 10px 10px #A4C3B2;
-}
-
-.Oakleysport{
-    height: 200px;
-    width: 240px;
-    margin: 20px 0px 5px 30px;
-    cursor: pointer;
-}
-
-.Oakleysport:hover{
-    box-shadow: 4px 10px 10px #A4C3B2;
-}
-
-.vogue1{
-    height: 200px;
-    width: 240px;
-    margin: 20px 0px 5px 30px;
-    cursor: pointer;
-}
-
-.vogue1:hover{
-    box-shadow: 4px 10px 10px #A4C3B2;
-}
-
-.vogue2{
-    height: 200px;
-    width: 240px;
-    margin: 20px 0px 5px 30px;
-    cursor: pointer;
-}
-
-.vogue2:hover{
-    box-shadow: 4px 10px 10px #A4C3B2;
-}
-
-
-.raybansol{
-    height: 200px;
-    width: 240px;
-    margin: 20px 0px 5px 30px;
-    cursor: pointer;
-}
-
-.raybansol:hover{
-    box-shadow: 4px 10px 10px #A4C3B2;
-}
-
-.raybansolf{
-    height: 200px;
-    width: 240px;
-    margin: 20px 0px 5px 30px;
-    cursor: pointer;
-}
-
-.raybansolf:hover{
+.fotos:hover{
     box-shadow: 4px 10px 10px #A4C3B2;
 }
 
@@ -310,16 +230,22 @@ flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
+.gafas img{
+    align-items: center;
+    justify-content: center;
+}
+
 .gafas a {
     margin-left: 30px;
     text-decoration: none;
-    text-align: justify;
+    text-align: center;
     cursor: pointer;
     color: #1D3557;
 }
 
 .precioRay {
-    margin-left: 30px;
+    text-align: center;
+    justify-content: space-between;
 }
 
 .terminosYcondiciones{
