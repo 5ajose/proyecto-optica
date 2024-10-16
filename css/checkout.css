@@ -224,15 +224,29 @@ ul li {
 }
 
 .container-izquierdo img {
-    height: 250px;
-    width: 320px;
+    height: 290px;
+    width: 420px;
     justify-content: center;
     margin-bottom: 25px;
+    border-radius: 2.5%;
 }
 
+.opcionespago{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+.metodos-pago img{
+    height: 65px;
+    width: 85px;
+}
 .gafas1 {
-    padding-top: 20px;
-    margin: 20px 0px 5px 30px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -249,14 +263,27 @@ ul li {
 }
 
 .volver-izquierdo{
-    text-align: center;
-    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+
+}
+
+.volver-izquierdo button{
+    background-color: #A4C3B2;
+    color: #1D3557;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
 }
 
 .volver-izquierdo button:hover{
-    background-color: #6b9080;
+    background-color: #1D3557;
     box-shadow: 4px 10px 10px #A4C3B2;
+    color: #fff;
 }
+
 
 
 .container-derecho {
@@ -273,14 +300,13 @@ form text {
 .metodos-pago{
     text-align: center;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 .cardinfo{
     margin-bottom: 5px;
 }
-.checkbox {
-    width: 45%;
-}
+
 
 .envioinfo{
     margin-bottom: 5px;
@@ -333,14 +359,25 @@ form text {
     margin: 10px 10px 0 15px;
 }
 
-.volver-derecho{
+.confirmacion-pago{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+}
+.boton-derecho{
     text-align: center;
-    margin-top: 30px;
+    background-color: #A4C3B2;
+    color: #1D3557;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
 }
 
 .boton-derecho:hover{
-    background-color: #6b9080;
+    background-color: #1D3557;
     box-shadow: 4px 10px 10px #A4C3B2;
+    color: #fff;
 }
 
 .terminosYcondiciones{
@@ -498,24 +535,24 @@ footer a{
     }
 
 
-@media (max-width: 576px){
+@media (max-width: 430px){
     .container-izquierdo{
         display: none;
+        justify-content: center;
     }
 }
 
 @media (max-width: 820px) {
     .container-izquierdo {
-        columns: 2;
-    }
-
-}
-
-@media (max-width:430px){
-    .container-izquierdo{
         display: none;
     }
+
 }
+
+@media (max-width: 768px) {
+    .container-izquierdo {
+        display: none;
+    }
 
 .logoPrincipal img{
     width: 100px;
