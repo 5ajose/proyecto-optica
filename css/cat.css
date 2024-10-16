@@ -141,6 +141,7 @@ button a{
 }
 .carritoDeCompras i{
     font-size: 30px;
+    color: #1D3557;
     
 }
 .buscador{
@@ -643,3 +644,24 @@ footer a{
     }
 
 }
+
+.gafas {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.fotos {
+    max-width: 100%; 
+    height: auto;
+    justify-items: center;
+}
+
+
+
+@media (max-width: 768px) { /* Ajusta este tamaño según tus necesidades */
+    .container-filtro {
+        display: none; /* Oculta el contenedor en pantallas medianas y pequeñas */
+    }
+}
+
