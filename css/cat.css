@@ -189,6 +189,7 @@ ul li {
 .containers {
     display: flex;
     padding: 25px;
+    width: 100%;
 }
 
 .container-filtro {
@@ -234,6 +235,10 @@ ul li {
 .gafas img{
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
+=======
+    width: 100%;
+>>>>>>> jose
 }
 
 .gafas a {
@@ -644,3 +649,24 @@ footer a{
     }
 
 }
+
+.gafas {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.fotos {
+    width: 100%; 
+    height: auto;
+    justify-items: center;
+}
+
+
+
+@media (max-width: 768px) { /* Ajusta este tamaño según tus necesidades */
+    .container-filtro {
+        display: none; /* Oculta el contenedor en pantallas medianas y pequeñas */
+    }
+}
+
