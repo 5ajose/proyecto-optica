@@ -189,6 +189,7 @@ ul li {
 .containers {
     display: flex;
     padding: 25px;
+    width: 100%;
 }
 
 .container-filtro {
@@ -234,6 +235,7 @@ ul li {
 .gafas img{
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .gafas a {
@@ -652,7 +654,7 @@ footer a{
 }
 
 .fotos {
-    max-width: 100%; 
+    width: 100%; 
     height: auto;
     justify-items: center;
 }
