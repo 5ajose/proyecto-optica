@@ -62,7 +62,7 @@ body{
     position: relative;
     display: inline-block;
     color: #1D3557;
-    font-weight: bold;
+    font-weight:600;
     
 }
 .opcionesDos{
@@ -120,6 +120,7 @@ body{
 }
 .botonesNav a {
     padding-top: 9px;
+    font-weight:600;
 }
 
 
