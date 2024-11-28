@@ -143,6 +143,7 @@ button a{
 }
 .carritoDeCompras i{
     font-size: 30px;
+    color: #1D3557;
     
 }
 .buscador{
@@ -264,6 +265,10 @@ button a{
     
     }
 }
+
+
+      
+  
 .titulo{
     margin-left: 30px;
 }
@@ -655,6 +660,16 @@ footer a{
         width: 470px;
         height: 300px;
         border-radius: 30px;
+    }
+    .imglente{
+        max-width: 450px;
+        margin: 0px;}
+
+    .descripcion{
+
+        width: 100%;
+        padding-right: 50px;
+        
     }
    
     .descripcion{

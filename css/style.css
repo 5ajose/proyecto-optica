@@ -1,3 +1,7 @@
+*{font-family: "Fredoka", sans-serif;
+    font-size: 16px;
+}
+
 nav{
     display: flex;
     flex: wrap;
@@ -13,9 +17,7 @@ nav{
     top:0;
     z-index: 1;
 }
-body{
-    background-color: #EAF4F4;
-}
+
 .logoPrincipal img{
     padding-left: 10px;
     width: 139px;
@@ -61,7 +63,7 @@ body{
     position: relative;
     display: inline-block;
     color: #1D3557;
-    font-weight: bold;
+    
     
 }
 .opcionesDos{
@@ -115,10 +117,12 @@ body{
 }
 
 .botonesNav{
-    display: flex;   
+    display: flex;
+    
 }
 .botonesNav a {
     padding-top: 9px;
+    font-weight:600;
 }
 
 
@@ -175,7 +179,9 @@ button a{
     background-color:#1D3557;
     font-size: 27px; 
 }
-
+body{
+    background-color: #EAF4F4;
+}
 main{
     background-color: #EAF4F4;
     margin-top: 70px;
@@ -467,6 +473,7 @@ footer a{
     }
     .opciones{
       top:50px;
+      
     }
     .opcionesDos{
       top:50px;
@@ -508,6 +515,7 @@ footer a{
     .examenVisual{
         display: flex;
         align-items: center;
+        
     }
     .promociones{
         display: flex;
@@ -529,8 +537,8 @@ footer a{
         width: 100%;
     }
     .accesosDirectos img{
-        width: 100%;
-        height: 100%;
+        width: 150px;
+        height: 200px;
     }
     .opciones a{
         font-size: 100%;
@@ -586,9 +594,9 @@ footer a{
         display: none;
     }
     .carousel-track img{
-        width: 470px;
-        height: 300px;
-        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
     }
     
     @keyframes slide {
@@ -599,16 +607,16 @@ footer a{
             transform: translateX(0); /* Mantiene la primera imagen */
         }
         33.33% {
-            transform: translateX(-110%); /* Pasa a la segunda imagen */
+            transform: translateX(-109%); /* Pasa a la segunda imagen */
         }
         62.74% {
-            transform: translateX(-100%); /* Mantiene la segunda imagen */
+            transform: translateX(-107%); /* Mantiene la segunda imagen */
         }
         66.66% {
-            transform: translateX(-205%); /* Pasa a la tercera imagen */
+            transform: translateX(-200%); /* Pasa a la tercera imagen */
         }
         96.08% {
-            transform: translateX(-200%); /* Mantiene la tercera imagen */
+            transform: translateX(-210%); /* Mantiene la tercera imagen */
         }
         100% {
             transform: translateX(0); /* Vuelve a la primera imagen */
@@ -631,6 +639,7 @@ footer a{
         flex-direction: row;
         justify-content: space-between;
         width: 100%;   
+       
     }
    
     .botonesNav button{

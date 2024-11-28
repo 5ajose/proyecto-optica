@@ -1,6 +1,6 @@
 nav{
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap; /* Corregido */
     justify-content: space-between;
     align-items: center;
     background-color: #A4C3B2;
@@ -10,9 +10,10 @@ nav{
     margin-top: 5px;
     margin-left: 7px;
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 1;
 }
+
 body{
     background-color: #EAF4F4;
 }
@@ -233,9 +234,12 @@ ul li {
 }
 
 .gafas img{
+
     align-items: center;
     justify-content: center;
+    
     width: 100%;
+
 }
 
 .gafas a {
@@ -403,7 +407,7 @@ footer a{
     }
 }
 
-@media (max-width: 390px ) {
+@media (max-width: 390px) {
     .containers {
         display: flex;
     }
@@ -666,4 +670,6 @@ footer a{
         display: none; /* Oculta el contenedor en pantallas medianas y pequeñas */
     }
 }
+
+
 
