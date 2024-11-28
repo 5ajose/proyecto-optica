@@ -1,5 +1,8 @@
-
-
+#formulario{
+    width: 300px;
+    height: 300px;
+    padding-top: 100px;
+}
 
 
 
@@ -198,6 +201,7 @@ ul li {
 }
 
 .containers {
+    flex-wrap: wrap;
     display: flex;
     padding: 25px;
     width: 100%;
@@ -246,10 +250,7 @@ ul li {
 .gafas img{
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
-=======
     width: 100%;
->>>>>>> jose
 }
 
 .gafas a {
