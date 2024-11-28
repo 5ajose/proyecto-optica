@@ -9,10 +9,10 @@ nav{
     align-items: center;
     background-color: #A4C3B2;
     border-radius: 5px;
-    width: 1342px;
+    width: 1300px;
     height: 66px;
-    margin-top: 5px;
-    margin-left: 7px;
+    margin:20px;
+    margin-left: 3px;
     position: fixed;
     top:0;
     z-index: 1;
