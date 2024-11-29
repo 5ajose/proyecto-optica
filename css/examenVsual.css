@@ -1,27 +1,35 @@
-*{font-family: "Fredoka", sans-serif;
-    font-size: 16px;
+*{  font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
-nav{
+
+nav {
+    opacity: 0.8;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #A4C3B2;
-    border-radius: 20px;
-    width: 1342px;
+    background-color: #A4C3B2; /* Color original */
+    border-radius: 5px;
+    width: 1320px;
     height: 66px;
-    margin-top: 5px;
-    margin-left: 7px;
+    margin: 20px;
     position: fixed;
-    top:0;
-    z-index: 1;
-   
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color */
 }
-body{
-    background-color: #EAF4F4;
+
+nav.scrolled {
+    opacity: 1;; /* Nuevo color cuando se hace scroll */
 }
+
+
+
 .logoPrincipal img{
     padding-left: 10px;
     width: 139px;
+    padding-bottom: 10px;
     
 }
 
@@ -42,6 +50,7 @@ body{
     height: 166px;
     box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
     border-radius: 4px;
+    z-index: 1;
 
    
 }
@@ -51,18 +60,18 @@ body{
    
 }
 .opciones a:hover{
-    font-size: 17px;
+    
     cursor: pointer;
     background-color: #A4C3B2;
     border-radius: 4px;
 
 
 }
-.ExamenVisual{
+.examenVisual{
     position: relative;
     display: inline-block;
     color: #1D3557;
-    font-weight:600;
+    
     
 }
 .opcionesDos{
@@ -74,6 +83,7 @@ body{
     height: 101px;
     box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
     border-radius: 4px;
+    z-index: 1000;
 }
 .opcionesDos a:hover{
     font-size: 17px;
@@ -81,7 +91,7 @@ body{
     background-color: #A4C3B2;
     border-radius: 4px;
 }
-.ExamenVisual:hover .opcionesDos{
+.examenVisual:hover .opcionesDos{
     display:flex;
     flex-direction: column;  
 }
@@ -114,9 +124,9 @@ body{
     flex-direction: column;  
 }
 
-
 .botonesNav{
-    display: flex;   
+    display: flex;
+    
 }
 .botonesNav a {
     padding-top: 9px;
@@ -138,6 +148,7 @@ button a{
 
 .carritoDeCompras{
     margin-right: 30px;
+    cursor: pointer;
 }
 .carritoDeCompras i{
     font-size: 30px;
@@ -146,17 +157,12 @@ button a{
 }
 .buscador{
     display: flex;
+    align-items: center;
 }
 #buscarProducto{
+    text-align: center;
     border: none;
-    width: 250px;
-    height: 39px;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-}
-#buscarProducto{
-    border: none;
-    width: 200px;
+    width: 300px;
     height: 30px;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -168,30 +174,26 @@ button a{
     justify-content: center;
     padding-left: 10px;
 }
-.carritoDeCompras{
-    margin-right: 30px;
-    cursor: pointer;
-}
-.carritoDeCompras i{
-    font-size: 30px;
-    
-}
 
 .lupa{
-    padding: 0;
-    border-start-end-radius: 6px;
-    border-bottom-right-radius: 6px;
 
+    padding: 0;
+    border: none;
+    margin-left: 5px;
 }
 
 .lupa i{
     display: flex;
     justify-content: center;
     color: white;
-    background-color:#1D3557;
-    font-size: 27px;
-   
+    background-color:#A4C3B2;
+    font-size: 27px; 
+    border: none;
 }
+
+/* Hasta Aquí va la Nav*/
+
+
 .main{
     margin-top: 7rem;
     display: flex;
@@ -213,18 +215,34 @@ button a{
     
 }
 .tiendaRelogAgenda{
-    margin-top: 0px;
+    margin-top: 50px;
     margin-bottom: 50px;
     width: 400px;
     height: 130px;
     display: flex;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    
+  
 }
 .pasosAgendamento{
     
     flex-wrap: wrap;
+    
+}
+
+.numeros{
+    font-size: 80px;
+    font-family: overpass ;
+    color: #1D3557;
+    margin-top: 40px;
+
+}
+
+.textoPasos{
+    margin-left: 20px;
+    margin-top: 25px;
 }
 .agendamientoo{
     display: flex;
@@ -233,17 +251,21 @@ button a{
 .reprogramarCita{
     margin-top: 20px;
     margin-left: 18px;
-    background-color: rgb(221, 69, 69);
+    background-color: #1D3557;
+    padding: 20px;
     border: none ;
+    font-family: overpass;
+    margin-bottom: 50px;
     color: white;
 }
 .contenido{
     width: 1195px;
     height: 106px;
-    margin-left: 20px;
+    
     margin-top: 4px;
-    border: 1px solid black;
+    border: none;
     padding: 10px;
+    font-family: overpass;
    
 }
 .botonesDcT {
@@ -321,6 +343,7 @@ input{
     }
     
     .contenido{
+        border-color: none;
         max-width: 900px;
         height: 200px;
         margin: 0px;
@@ -858,17 +881,17 @@ footer a{
 }
 .contenedorBubble{
     position: sticky;
-   
+
 }
 
 footer a{
     display: none;
     flex-wrap: wrap;
-    
+
 }
 footer h4{
     font-size: large;
-    
+
 }
 
 .terminosYcondiciones{
@@ -880,9 +903,5 @@ footer h4{
 .linkInteres{
     height: 30px;
 }
-
-
-
-
 
 }
