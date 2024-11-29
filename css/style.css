@@ -86,7 +86,6 @@ nav.scrolled {
     z-index: 1000;
 }
 .opcionesDos a:hover{
-    font-size: 17px;
     cursor: pointer;
     background-color: #A4C3B2;
     border-radius: 4px;
@@ -113,7 +112,6 @@ nav.scrolled {
     border-radius: 4px;
 }
 .opcionesTres a:hover{
-    font-size: 17px;
     cursor: pointer;
     background-color: #A4C3B2;
     border-radius: 4px;
@@ -248,12 +246,16 @@ main{
 }
 
 .marcas img{
-    border-radius: 50%;
-    width: 150px;
+    
+    width: 100px;
+}
+.vogue{
+    width: 100px;
+
+    margin-top: 40px;
 }
 .marcas img:hover{
     cursor: pointer;
-    box-shadow: 4px 10px 10px #6B9080;
 }
 
 .accesosDirectos{
@@ -362,11 +364,12 @@ footer a{
 }
 
 .floating-bubble i{
+    
      font-size: 35px;
      border-radius: 50%;
      color: white;
-     justify-content: center;
-     padding-left: 10px; 
+     padding-top: 8px;
+     
 }
 
 .floating-bubble{
@@ -378,29 +381,34 @@ footer a{
     height: 60px;
     background-color: #6B9080;
     box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     position: relative;
-    float: right;
-    margin-right: 25px;  
+    display: flex;
+     justify-content: center;
+     align-items: center;
+    
 }
+
 
 .contact {
     display:none;
     position: absolute;
     left: 0;
     padding: 2px;
-    border-radius: 5px;
+    border-radius: 50%;
     z-index: 100;
     border: none;
     bottom: 100%;
+    margin-bottom: 3px;
 }
-
+.contact a{
+    border-radius: 50%;
+}
   
 .floating-bubble:hover .contact {
     display: block;
     border: none;
+    
 
   }
 .floating-bubble:hover{
@@ -412,10 +420,13 @@ footer a{
     justify-content: space-around;
     flex-direction: row;
     
+    
 }
 .contact button{
-    border: none;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -424,7 +435,7 @@ footer a{
 .whatsapp i{
     border: none;
     color:#6B9080 ;
-    padding-left: 2px;
+ 
     
 } 
 .whatsapp i:hover{
