@@ -4,7 +4,7 @@
 }
 
 nav {
-    opacity: 0.8;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -86,7 +86,6 @@ nav.scrolled {
     z-index: 1000;
 }
 .opcionesDos a:hover{
-    font-size: 17px;
     cursor: pointer;
     background-color: #A4C3B2;
     border-radius: 4px;
@@ -113,7 +112,6 @@ nav.scrolled {
     border-radius: 4px;
 }
 .opcionesTres a:hover{
-    font-size: 17px;
     cursor: pointer;
     background-color: #A4C3B2;
     border-radius: 4px;
@@ -269,9 +267,14 @@ main {
     border-bottom: solid 1px #1D3557;
     width: 1000px;
 }
+.carousel img{
+        border-radius: 7px;
+        width: 399px;
+        height: 602px;
+}
 .DosPorUno img {
     
-   
+
     border-radius: 10px;
 
 }
@@ -280,8 +283,8 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
-    width: 500px;
-    height: 669px;
+    width: 380px;
+    height: 570px;
     border-radius:10px ;
     margin-right: 20px;
     
@@ -289,14 +292,13 @@ main {
 .carousel-track:hover{
     cursor: pointer;
     box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
-    transform: scale(1.1);
+    transform: scale(1);
 
 }
 .carousel{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 
 }
 .carousel h2{
@@ -328,26 +330,26 @@ main {
 .primeraDerecha:hover{
     cursor: pointer;
     box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
-    transform: scale(1.1);
+    transform: scale(1);
 
 }
 .primeraDerecha img{
-    width: 620px;
+    width: 680px;
     
     border-radius: 6px;
     
 
 }
 .segundaDerecha img{
-  width: 1095px;
+    width: 1095px;
     border-radius: 6px;
     justify-self: center;
-    margin-left: 60px;
+    
   
 
 }
 .segundaDerecha{
-    
+    width: 1095px;
     margin-top: 10px;
     
     border-radius: 5px;
@@ -355,7 +357,7 @@ main {
 .segundaDerecha:hover{
     cursor: pointer;
     box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.2);
-    transform: scale(1.1);
+    transform: scale(1);
 
 }
 
