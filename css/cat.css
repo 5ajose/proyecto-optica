@@ -1,4 +1,4 @@
-#formulario{
+/* #formulario{
     width: 300px;
     height: 300px;
     padding-top: 100px;
@@ -10,7 +10,7 @@
 
 
 
-
+ */
 
 nav{
     display: flex;
@@ -200,25 +200,98 @@ ul li {
     font: bold;
 }
 
+.cuerpo {
+    display: flex;
+    margin-top: 100px;
+    font-family: Thin 100;
+}
 .containers {
     flex-wrap: wrap;
     display: flex;
-    padding: 25px;
+    padding: 2px;
     width: 100%;
 }
 
+.menu-indicator {
+    position: fixed;
+    left: 0;
+    top: 100px; 
+    z-index: 1000;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #1D3557;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.bi-list{
+    color: #fff;
+}
 .container-filtro {
-    height: 520px;
-    width: 180px;
+    position: fixed;
+    top: 0;
+    left: -300px; 
+    width: 50px;
+    height: 120px; 
+    background-color: #fff;
+    padding: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.9s ease; 
+}
+
+.filtrotitulo {
+    text-align: left;
+}
+
+.filtro {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; 
+    justify-content: left;
+}
+
+.filtro label {
+    margin-bottom: 5px;
+    font-weight: lighter;
+    margin-bottom: 16px; 
+    text-align: left;
+}
+
+.filtro select {
+    padding: 8px;
+    font-size: 16px;
+    width: 120px;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+label { 
+    margin-bottom: 5px; 
+    text-align: start; 
+}
+
+body:hover .container-filtro {
+    left: 0; 
+}
+
+.container-filtro:hover {
+    left: 0; 
+}
+
+.container-filtro {
+    height: 460px;
+    width: 50px;
     background-color: #cce3de;
-    margin: 100px 0px 50px;
+    margin: 0px 0px 0px;
 }
 
 .container-filtro{
-    width: 15%;
-}
-
+    width: 50px;
+} 
 .container-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     height: 1630px;
     width: 990px;
     background-color: #EAF4F4;
@@ -229,10 +302,22 @@ ul li {
     border-radius: 8px;
 }
 
+.primer-grupo, .segundo-grupo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1 1 45%;
+}
+
+.fotos {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
 .fotos{
-    height: 250px;
-    width: 350px;
-    margin: 20px 0px 5px 30px;
+    height: 200px;
+    width: 300px;
+    margin: 20px 0px 0px 0px;
     cursor: pointer;
     justify-content: space-evenly;
 
@@ -247,22 +332,31 @@ ul li {
     justify-content: space-evenly;
 }
 
+.gafas{
+    flex: 1 1 25%;
+    display: block;
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: Thin 100;
+    font-weight: lighter;
+}
+
 .gafas img{
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 250px;
 }
 
 .gafas a {
-    margin-left: 30px;
+    margin-left: 0px;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
     cursor: pointer;
     color: #1D3557;
 }
 
 .precioRay {
-    text-align: center;
+    text-align: left;
     justify-content: space-between;
 }
 
@@ -518,6 +612,7 @@ footer a{
     .marcas
     ,#buscarProducto,
     .lupa, .lupa i
+    .menu-indicator
     {
         display: none;
     }
@@ -668,11 +763,11 @@ footer a{
     text-align: center;
 }
 
-.fotos {
-    width: 100%; 
-    height: auto;
+/* .fotos {
+    width: 10%; 
+    height: 10%;
     justify-items: center;
-}
+} */
 
 
 

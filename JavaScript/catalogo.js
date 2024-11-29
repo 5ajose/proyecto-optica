@@ -1,16 +1,9 @@
-// body.style.backGround = "Red"
+document.addEventListener("mousemove", function (event) {
+    var mouseX = event.clientX;
 
-// let enviarInputs = document.getElementById("enviar")
-// enviarInputs.addEventListener("click",(e)=>{
-    
-//     let imagen = document.getElementById("imagen")
-//     let marca = document.getElementById("marca")
-//     let precio = document.getElementById("precio")
-//     console.log(marca.value);
-    
-
-//     let crearElemento = document.getElementById("p")
-//     crearElemento.textContent = marca
-//     crearElemento.textContent = precio
-    
-// })
+    if (mouseX < 180) {
+        document.querySelector(".container-filtro").style.left = "0";
+    } else {
+        document.querySelector(".container-filtro").style.left = "-300px";
+    }
+});
