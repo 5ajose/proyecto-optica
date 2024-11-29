@@ -1,22 +1,30 @@
-*{font-family: "Fredoka", sans-serif;
-    font-size: 16px;
+*{  font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
-nav{
+nav {
+    opacity: 0.8;
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #A4C3B2;
+    background-color: #A4C3B2; /* Color original */
     border-radius: 5px;
-    width: 1342px;
+    width: 1320px;
     height: 66px;
-    margin-top: 5px;
-    margin-left: 7px;
+    margin: 20px;
     position: fixed;
-    top:0;
-    z-index: 1;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color */
 }
+
+nav.scrolled {
+    opacity: 1;; /* Nuevo color cuando se hace scroll */
+}
+
+
 
 .logoPrincipal img{
     padding-left: 10px;
@@ -52,7 +60,7 @@ nav{
    
 }
 .opciones a:hover{
-    font-size: 17px;
+    
     cursor: pointer;
     background-color: #A4C3B2;
     border-radius: 4px;
@@ -152,8 +160,9 @@ button a{
     align-items: center;
 }
 #buscarProducto{
+    text-align: center;
     border: none;
-    width: 200px;
+    width: 300px;
     height: 30px;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -167,35 +176,39 @@ button a{
 }
 
 .lupa{
+
     padding: 0;
-    border-start-end-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border: none;
+    margin-left: 5px;
 }
 
 .lupa i{
     display: flex;
     justify-content: center;
     color: white;
-    background-color:#1D3557;
+    background-color:#A4C3B2;
     font-size: 27px; 
+    border: none;
 }
 body{
     background-color: #EAF4F4;
 }
 main{
     background-color: #EAF4F4;
-    margin-top: 70px;
+  
 }
+
 .carousel-track img {
-    margin-top: 10px;
-    margin-left: 10px;
-    border-radius: 50px;
-    width: 1332px;
-    height: 426px;
+   
+    
+    width: 1348px;
+    height: 100%;
     flex-shrink: 0;   
+    
 }
 .carousel {
     width: 100%; 
+    height: 100%;
     overflow: hidden; 
     position: relative;  
 }
@@ -211,21 +224,21 @@ main{
         transform: translateX(0); /* Mantiene la imagen*/
     }
     33.33% {
-        transform: translateX(-1336px); /* pasa a la siguiente imagen */
+        transform: translateX(-1346px); /* pasa a la siguiente imagen */
     }
     62.74% {
-        transform: translateX(-1336px); /* mantiene la imagen */
+        transform: translateX(-1346px); /* mantiene la imagen */
     }
     66.66% {
-        transform: translateX(-2672px); /* pasa a la siguiente imagen */
+        transform: translateX(-2695px); /* pasa a la siguiente imagen */
     }
     96.08% {
-        transform: translateX(-2672px); /* mantiene la imagen */
+        transform: translateX(-2695px); /* mantiene la imagen */
     }
     100% {
         transform: translateX(0); /* Regresar a la primera imagen */
     }
-}
+} 
 .marcas{
     display: flex;
     justify-content: space-around;
@@ -242,54 +255,76 @@ main{
     cursor: pointer;
     box-shadow: 4px 10px 10px #6B9080;
 }
-.accesosDirectos img{
-    width: 278px;
-    height: 556px;
-    border-radius: 10px;
-    cursor: pointer;
-    
-}
-.accesosDirectos img:hover{
-    box-shadow: 4px 10px 10px #6B9080;
-
-}
 
 .accesosDirectos{
     display: flex;
-    justify-content: space-between;
-    position: relative;
-    justify-content: center;
-    gap: 40px;
+    flex-wrap: wrap;
     
 }
-.gafasDeSol a{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    color:#1D3557;
-    font-weight: bold;
-}
-.accesorios a{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    color:#1D3557;
-    font-weight: bold;
-}
-.oftalmologicas a{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    color:#1D3557;
-    font-weight: bold;
-}
-.lentesDeContacto a{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    color:#1D3557;
-    font-weight: bold;
-}
+
+.accesosDirectos div {
+    position: relative; 
+    overflow: hidden; 
+    width: 673px; 
+    height: 500px; 
+
+  }
+  
+  .accesosDirectos img {
+    width: 673px; 
+    height: 500px;
+    object-fit: cover;
+    transition: 9s ease;
+    transform-origin: center center;
+  }
+  
+  .accesosDirectos div:hover img {
+    transform: scale(1.1);
+  }
+  
+  
+  .ver {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #1D3557;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1; 
+    opacity: 0,8;
+  }
+ 
+  .ver:hover {
+    background-color: white;
+  }
+  .verCategoria{
+        text-decoration: none;
+        position: absolute;
+        bottom: 90px; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+        z-index: 1; 
+    
+  }
+    
+  .verCategoria:hover {
+    color: #CCE3DE; /* Efecto al pasar el mouse */
+  }
+  
+  
+  
+
+
+
+
 
 .terminosYcondiciones{
     width: 331px;
@@ -423,6 +458,7 @@ footer a{
 .contenedorBubble{
     position: fixed;
     left: 1240px;
+    bottom: 100px;
     z-index: 1000;
     margin-bottom: 10px;  
 }
@@ -533,12 +569,18 @@ footer a{
         width: 100%    
     }
     .accesosDirectos{
-        display: flex;
-        width: 100%;
+        width: 100%; /* o un ancho fijo como 800px si prefieres */
+        max-width: 100%; /* Para evitar que se expanda más allá de la pantalla */
+        max-height: 500px; /* Controla la altura máxima */
+        overflow: hidden; /* Evita el desbordamiento si la imagen se sale */
+        display: flex; /* Flexbox para una distribución flexible */
+        justify-content: center;
+        align-items: center;
     }
     .accesosDirectos img{
-        width: 150px;
-        height: 200px;
+        max-width: 100%; /* La imagen se ajustará al ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        object-fit: contain;
     }
     .opciones a{
         font-size: 100%;
