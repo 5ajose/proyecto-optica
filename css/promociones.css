@@ -221,11 +221,26 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: overpass;
+    margin-top: 50px;
 
 }    
+.descuentoBoton{
 
+    background-color: #1D3557;
+    color: aliceblue;
+    position: absolute;
+    z-index: 20;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 6px;
+    
+    
+}
 .textoPromocion h4{
-    background-color: red;
+    background-color:#1D3557;
     color: white;
     display: flex;
     justify-content: center;
@@ -261,13 +276,14 @@ main {
 
 }
 .tituloPromociones{
-    margin-top: 90px;
+    margin-top: 140px;
     display: flex;
     justify-content: center;
     color: #1D3557;
 
     border-bottom: solid 1px #1D3557;
     width: 1000px;
+    font-family: overpass;
 }
 .DosPorUno img {
     
