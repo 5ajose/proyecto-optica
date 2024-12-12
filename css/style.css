@@ -260,7 +260,10 @@ main{
     margin-top: 40px;
 }
 .marcas img:hover{
+    scale: 1;
+    width: 110px;
     cursor: pointer;
+
 }
 
 .accesosDirectos{

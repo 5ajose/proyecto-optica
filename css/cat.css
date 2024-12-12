@@ -233,12 +233,15 @@ ul li {
 }
 .container-filtro {
     position: fixed;
-    top: 0;
-    left: -300px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 100px;
+    left: -100px; 
     width: 50px;
     height: 120px; 
     background-color: #fff;
-    padding: 100px;
+    padding: 70px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: left 0.9s ease; 
 }
@@ -255,9 +258,9 @@ ul li {
 }
 
 .filtro label {
-    margin-bottom: 5px;
+    
     font-weight: lighter;
-    margin-bottom: 16px; 
+    
     text-align: left;
 }
 
@@ -313,7 +316,9 @@ body:hover .container-filtro {
     gap: 20px;
     flex: 1 1 45%;
 }
-
+.bi-funnel-fill{
+    color: white;
+}
 .fotos {
     display: flex;
     width: 100%;
